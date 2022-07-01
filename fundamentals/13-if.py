@@ -26,9 +26,35 @@ else:
 
 '''
 
+'''
 number = int(input('Ingrese un numero => '))
 result = number % 2
 if (result == 0):
 	print('Es par')
 else:
 	print('Es impar')
+'''
+
+number = input("Ingrese un numero => ")
+
+# Check if the user input is a float
+if "." in number:
+    print("Debe ingresar un numero entero.")
+else:
+    result = int(number) % 2
+    if (result == 0):
+      print('Es par')
+    else:
+      print('Es impar')
+
+'''
+try:
+    number = int(input('Ingrese un numero => '))
+    result = number % 2
+    if (result == 0):
+        print('Es par')
+    else:
+        print('Es impar')
+except ValueError:
+    print('Debe ingresar un numero entero.')
+'''
