@@ -1,5 +1,5 @@
 user_option = input('piedra, papel o tijera => ')
-computer_option = 'tijera'
+computer_option = 'papel'
 
 if user_option == computer_option:
     print('Empate!')
@@ -9,4 +9,18 @@ elif user_option == 'piedra':
         print('gana el usuario!')
     else:
         print('papel gana a piedra')
+        print('gana la compu!')
+elif user_option == 'papel':
+    if computer_option == 'piedra':
+        print('papel gana a piedra')
+        print('gana el usuario!')
+    else:
+        print('tijera gana a papel')
+        print('gana la compu!')
+elif user_option == 'tijera':
+    if computer_option == 'papel':
+        print('tijera gana a papel')
+        print('gana el usuario!')
+    else:
+        print('piedra gana a tijera')
         print('gana la compu!')
