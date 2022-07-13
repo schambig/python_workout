@@ -1,5 +1,6 @@
 user_option = input('piedra, papel o tijera => ')
-computer_option = 'papel'
+user_option = user_option.lower() # Considerar si esque el ususario ingresa alguna mayuscula
+computer_option = 'piedra'
 
 if user_option == computer_option:
     print('Empate!')
