@@ -1,8 +1,10 @@
+import random
+
 options = ('piedra', 'papel', 'tijera')
 
 user_option = input('piedra, papel o tijera => ')
 user_option = user_option.lower() # Considerar si esque el ususario ingresa alguna mayuscula
-computer_option = 'piedra'
+computer_option = random.choice(options)
 
 print('Seleccion de usuario', user_option)
 print('Seleccion de la compu', computer_option)
