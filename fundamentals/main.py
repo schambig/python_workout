@@ -4,6 +4,10 @@ options = ('piedra', 'papel', 'tijera')
 
 user_option = input('piedra, papel o tijera => ')
 user_option = user_option.lower() # Considerar si esque el ususario ingresa alguna mayuscula
+
+if user_option not in options:
+    print('Esa opcion no es valida')
+
 computer_option = random.choice(options)
 
 print('Seleccion de usuario', user_option)
