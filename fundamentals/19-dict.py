@@ -1,3 +1,5 @@
+# Diccionarios, definincion y lectura
+
 my_dict = {}
 print('type(my_dict) =>', type(my_dict))
 
