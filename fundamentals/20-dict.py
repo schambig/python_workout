@@ -12,6 +12,7 @@ print(person)
 print()
 
 print('Actualizando valores del diccionario:')
+# Si el par llave:valor no existe, este es creado
 person['name'] = 'luis'
 person['age'] -= 50
 person['langs'].append('rust')
