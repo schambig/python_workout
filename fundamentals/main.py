@@ -2,6 +2,8 @@ import random
 
 options = ('piedra', 'papel', 'tijera')
 
+computer_wins = 0
+user_wins = 0
 rounds = 1
 
 while True:
@@ -27,20 +29,29 @@ while True:
         if computer_option == 'tijera':
             print('piedra gana a tijera')
             print('gana el usuario!')
+            user_wins += 1
         else:
             print('papel gana a piedra')
             print('gana la compu!')
+            computer_wins += 1
     elif user_option == 'papel':
         if computer_option == 'piedra':
             print('papel gana a piedra')
             print('gana el usuario!')
+            user_wins += 1
         else:
             print('tijera gana a papel')
             print('gana la compu!')
+            computer_wins += 1
     elif user_option == 'tijera':
         if computer_option == 'papel':
             print('tijera gana a papel')
             print('gana el usuario!')
+            user_wins += 1
         else:
             print('piedra gana a tijera')
             print('gana la compu!')
+            computer_wins += 1
+
+    rounds += 1
+    print()
