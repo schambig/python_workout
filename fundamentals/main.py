@@ -54,11 +54,11 @@ while True:
             computer_wins += 1
 
     if computer_wins == 2:
-        print('El ganador es la compu')
+        print('El ganador del juego es la compu')
         break        
 
     if user_wins == 2:
-        print('El ganador es el usuario')
+        print('El ganador del juego es el usuario')
         break        
 
     rounds += 1
