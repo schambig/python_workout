@@ -17,6 +17,9 @@ while True:
 
     if user_option not in options:
         print('Esa opcion no es valida')
+        print()
+        continue
+    
 
     computer_option = random.choice(options)
 
