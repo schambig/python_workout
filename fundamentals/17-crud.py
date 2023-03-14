@@ -40,6 +40,6 @@ print(numbers_a) # Output: d', 700, 10, 4, 3, 'change', 2, 1]
 
 strings = ['re', 'ab', 'ed']
 strings.sort()
-print(strings) # Output: ['ab', 'ed', 're']
+print(strings) # Output: [1, 3, 4, 6]
 
 # new_list.sort() Output: TypeError: '<' not supported between instances of 'int' and 'str'
