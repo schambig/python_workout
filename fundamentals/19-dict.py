@@ -1,7 +1,7 @@
 # Diccionarios, definincion y lectura
 
 my_dict = {}
-print('type(my_dict) =>', type(my_dict))
+print(type(my_dict)) # Output: <class 'dict'>
 
 my_dict = {
   'avion': "bla bla bla",
@@ -11,14 +11,14 @@ my_dict = {
 }
 print()
 
-print('my_dict =>', my_dict)
-print('len(my_dict) =>', len(my_dict))
+print(my_dict) # Output: {'avion': 'bla bla bla', 'name': 'Salomon', 'last_name': 'Chambi Gutierrez', 'age': 99}
+print(len(my_dict)) # Output: 4
 print()
 
-print("my_dict['age'] =>", my_dict['age'])
-print("my_dict['last_name'] =>", my_dict['last_name'])
-print("my_dict.get('age') =>", my_dict.get('age'))
+print(my_dict['age']) # Output: 99
+print(my_dict['last_name']) # Output: Chambi Gutierrez
+print(my_dict.get('age')) # Output: 99
 print()
 
-print("'avion' in my_dict =>", 'avion' in my_dict) # Output: True
-print("'otroqueno' in my_dict =>", 'otroqueno' in my_dict) # Output: False
+print('avion' in my_dict) # Output: True
+print('otroqueno' in my_dict) # Output: False
