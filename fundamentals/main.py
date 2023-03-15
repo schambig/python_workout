@@ -23,8 +23,8 @@ while True:
 
     computer_option = random.choice(options)
 
-    print('Seleccion de usuario', user_option)
-    print('Seleccion de la compu', computer_option)
+    print('Seleccion de usuario =>', user_option)
+    print('Seleccion de la compu =>', computer_option)
 
     if user_option == computer_option:
         print('Empate!')
