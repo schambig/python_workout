@@ -4,8 +4,8 @@ matriz = [
   [4,5,6],
   [7,8,9]
 ]
-print('Matriz:', matriz)
-print('matriz[0][1]:', matriz[0][1])
+print(matriz) # Output: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(matriz[0][1]) # Output: 2 
 print()
 
 # for element in matriz:
@@ -17,3 +17,16 @@ for row in matriz:
   print(row)
   for column in row:
     print(column)
+  # Output: 
+  # [1, 2, 3]
+  # 1
+  # 2
+  # 3
+  # [4, 5, 6]
+  # 4
+  # 5
+  # 6
+  # [7, 8, 9]
+  # 7
+  # 8
+  # 9
