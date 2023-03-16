@@ -9,7 +9,7 @@ set_types = {1, 'hola', False, 12.12}
 print(set_types) # output: {False, 1, 'hola', 12.12}
 
 set_from_string = set('hoola') # cast to set (no duplicates)
-print(set_from_string) # output: 
+print(set_from_string) # output: {'l', 'h', 'o', 'a'}
 
 set_from_tuples = set(('abc', 'cbv', 'as', 'abc')) # cast to set (no duplicates)
 print(set_from_tuples) # output: {'as', 'cbv', 'abc'}
