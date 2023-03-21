@@ -28,3 +28,9 @@ print(list(zip(names, ages))) # [('salo', 99), ('lucy', 98), ('jose', 97)]
 
 new_dict = {name: age for (name, age) in zip(names, ages)}
 print(new_dict) # {'salo': 99, 'lucy': 98, 'jose': 97}
+
+# Another way to do the same
+nombres = ['luis', 'yan', "sal"]
+edades = [15, 16, 17]
+nuevo_dict = {nombres[i]:edades[i] for i in range(len(nombres))}
+print(nuevo_dict) # {'luis': 15, 'yan': 16, 'sal': 17}
