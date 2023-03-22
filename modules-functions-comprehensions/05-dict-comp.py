@@ -34,3 +34,9 @@ nombres = ['luis', 'yan', "sal"]
 edades = [15, 16, 17]
 nuevo_dict = {nombres[i]:edades[i] for i in range(len(nombres))}
 print(nuevo_dict) # {'luis': 15, 'yan': 16, 'sal': 17}
+
+# Another way without dict comprehension
+nomb = ['luis', 'yan', "sal"]
+edad = [20, 21, 22]
+nuev_dict = dict(zip(nomb, edad))
+print(nuev_dict) # {'luis': 20, 'yan': 21, 'sal': 22}
