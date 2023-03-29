@@ -5,9 +5,9 @@ def sum_with_range(min, max):
     sum += x
   return sum
 
-result = sum_with_range(1, 10)
+result = sum_with_range(1, 10) # Suma desde 1 hasta 9:
 print(result) # 45
-result_2 = sum_with_range(result, result + 10)
+result_2 = sum_with_range(result, result + 10) # Suma desde 45 hasta 54:
 print(result_2) # 495
 
 # More info about function return:
