@@ -1,6 +1,10 @@
-def get_volume(length, width, depth):
-    return length * width * depth
+def get_volume(length=1, width=2, depth=3):
+    return length * width * depth, width, 'Salo'
 
-vol = get_volume(1, 2, 3)
+res = get_volume(width=7)
+vol, len, text = get_volume(width=7)
 
+print(res)
 print(vol)
+print(len)
+print(text)
