@@ -14,3 +14,6 @@ print(price_2)
 
 # More about scope in python
 # https://www.w3schools.com/python/python_scope.asp
+
+# YT video on Scope
+# https://www.youtube.com/watch?v=nKefMgHBNh0
