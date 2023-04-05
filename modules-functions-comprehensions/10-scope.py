@@ -15,5 +15,9 @@ print(price_2)
 # More about scope in python
 # https://www.w3schools.com/python/python_scope.asp
 
+# global keyword: If you need to create a global variable, but are stuck in the local scope, you can use the global keyword.
+# The global keyword makes the variable global.
+# Also, use the global keyword if you want to make a change to a global variable inside a function.
+
 # YT video on Scope
 # https://www.youtube.com/watch?v=nKefMgHBNh0
