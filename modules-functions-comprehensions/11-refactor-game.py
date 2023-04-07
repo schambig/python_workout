@@ -1,10 +1,27 @@
 import random
 
-options = ('piedra', 'papel', 'tijera')
+
 
 computer_wins = 0
 user_wins = 0
 rounds = 1
+
+def choose_options():
+    options = ('piedra', 'papel', 'tijera')
+    user_option = input('piedra, papel o tijera => ')
+    user_option = user_option.lower() # Considerar si esque el ususario ingresa alguna mayuscula
+
+    if user_option not in options:
+        print('Esa opcion no es valida')
+        print()
+        # continue
+    
+    computer_option = random.choice(options)
+
+    print('Seleccion de usuario =>', user_option)
+    print('Seleccion de la compu =>', computer_option)
+
+    return user_option, computer_option
 
 while True:
 
@@ -12,19 +29,8 @@ while True:
     print('ROUND', rounds)
     print('*' * 10)
 
-    user_option = input('piedra, papel o tijera => ')
-    user_option = user_option.lower() # Considerar si esque el ususario ingresa alguna mayuscula
+    user_option, computer_option = choose_options()
 
-    if user_option not in options:
-        print('Esa opcion no es valida')
-        print()
-        continue
-    
-
-    computer_option = random.choice(options)
-
-    print('Seleccion de usuario =>', user_option)
-    print('Seleccion de la compu =>', computer_option)
 
     if user_option == computer_option:
         print('Empate!')
@@ -66,3 +72,4 @@ while True:
 
     rounds += 1
     print()
+
