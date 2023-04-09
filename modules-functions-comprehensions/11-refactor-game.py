@@ -54,6 +54,16 @@ def game_rules(user_option, computer_option, user_wins, computer_wins):
 
     return user_wins, computer_wins
 
+def get_winner(user_wins, computer_wins):
+    if user_wins == 2:
+        print('El ganador del juego es el usuario')
+        quit() # is there a better way to end a loop? because break doesn't work outside a while loop
+        
+    if computer_wins == 2:
+        print('El ganador del juego es la compu')      
+        quit() # is there a better way to end a loop? because break doesn't work outside a while loop
+
+
 def run_game():
     user_wins = 0
     computer_wins = 0
@@ -66,15 +76,8 @@ def run_game():
 
         user_option, computer_option = choose_options()
         user_wins, computer_wins = game_rules(user_option, computer_option, user_wins, computer_wins)
-
-        if computer_wins == 2:
-            print('El ganador del juego es la compu')
-            break        
-
-        if user_wins == 2:
-            print('El ganador del juego es el usuario')
-            break        
-
+        get_winner(user_wins, computer_wins)
+            
         rounds += 1
         print()
 
