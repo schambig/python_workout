@@ -57,11 +57,13 @@ def game_rules(user_option, computer_option, user_wins, computer_wins):
 def get_winner(user_wins, computer_wins):
     if user_wins == 2:
         print('El ganador del juego es el usuario')
-        quit() # is there a better way to end a loop? because break doesn't work outside a while loop
-        
+        # quit() # Take a look at the NOTE at the EOF
+        exit()        
+
     if computer_wins == 2:
         print('El ganador del juego es la compu')      
-        quit() # is there a better way to end a loop? because break doesn't work outside a while loop
+        # quit() # Take a look at the NOTE at the EOF
+        exit()        
 
 
 def run_game():
@@ -82,3 +84,23 @@ def run_game():
         print()
 
 run_game()
+
+# NOTE:
+# Both quit() and exit() can be used to finish a function, but they have different implications.
+# quit() is a built-in function that raises the SystemExit exception, which tells the Python interpreter to exit immediately.
+# exit() is a function in the sys module that does the same thing.
+
+# The main difference between the two is that:
+
+# quit() is not always available.
+# If the site module is not imported, then quit() will not be defined.
+# This is because quit() was originally added to Python to make it more user-friendly.
+# It is designed to be used in the interactive interpreter, where it is easy to type quit to exit.
+
+# exit(), on the other hand, is always available.
+# It is a built-in function, so it is always available in any Python program.
+# This makes it a more reliable option for finishing a function.
+
+# In general, it is best to use exit() to finish a function.
+# It is more reliable and it is not tied to the interactive interpreter.
+# However, if you are sure that the site module is imported, then you can use quit() as well.
