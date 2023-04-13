@@ -14,8 +14,10 @@ full_name = lambda name, last_name: f'Full name is {name.title()} {last_name.tit
 text = full_name('salomon', 'chambi gutierrez')
 print(text)
 
-# Fibonacci series using lambda function and recursion:
+# Call a lambda function directly:
+# (lambda x : x * 2)(3) # 6
 
+# Fibonacci series using lambda function and recursion:
 # fibonacci = lambda x: 0 if x == 0 else 1 if x < 3 else fibonacci(x - 1) + fibonacci(x - 2)
 # print(fibonacci(int(input('Enter a number: '))))
 
