@@ -23,3 +23,4 @@ print(text)
 
 # More about Lamdba functions:
 # https://www.w3schools.com/python/python_lambda.asp
+# https://www.freecodecamp.org/news/python-lambda-function-explained/
