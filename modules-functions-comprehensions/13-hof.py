@@ -21,3 +21,16 @@ print(result)
 ## change
 result = high_ord_func_v2(2, lambda x: x * 5)
 print(result)
+
+
+# In Python, a higher-order function is a function that takes one or more functions as arguments, or returns a function as its result.
+# Higher-order functions are often used to make code more reusable and concise.
+
+# Some examples of higher-order functions in Python include:
+
+#     map(): This function takes a function and an iterable as arguments,
+#            and returns a new iterable that contains the results of applying the function to each element of the original iterable.
+#     filter(): This function takes a function and an iterable as arguments,
+#               and returns a new iterable that contains only the elements of the original iterable for which the function returns True.
+#     reduce(): This function takes a function and an iterable as arguments,
+#               and returns a single value that is the result of repeatedly applying the function to the elements of the iterable, starting with an initial value.
