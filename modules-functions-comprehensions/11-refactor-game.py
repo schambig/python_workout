@@ -93,13 +93,13 @@ run_game()
 # The main difference between the two is that:
 
 # quit() is not always available.
-# If the site module is not imported, then quit() will not be defined.
-# This is because quit() was originally added to Python to make it more user-friendly.
-# It is designed to be used in the interactive interpreter, where it is easy to type quit to exit.
+#        If the site module is not imported, then quit() will not be defined.
+#        This is because quit() was originally added to Python to make it more user-friendly.
+#        It is designed to be used in the interactive interpreter, where it is easy to type quit to exit.
 
 # exit(), on the other hand, is always available.
-# It is a built-in function, so it is always available in any Python program.
-# This makes it a more reliable option for finishing a function.
+#         It is a built-in function, so it is always available in any Python program.
+#         This makes it a more reliable option for finishing a function.
 
 # In general, it is best to use exit() to finish a function.
 # It is more reliable and it is not tied to the interactive interpreter.
