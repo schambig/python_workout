@@ -20,8 +20,6 @@ def choose_options():
     return user_option, computer_option
 
 def game_rules(user_option, computer_option, user_wins, computer_wins):
-    # user_wins = 0
-    # computer_wins = 0
     if user_option == computer_option:
         print('Empate!')
     elif user_option == 'piedra':
