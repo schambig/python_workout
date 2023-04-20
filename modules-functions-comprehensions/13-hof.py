@@ -6,21 +6,23 @@ def high_ord_func(x, func):
 
 res = high_ord_func(3, increment)
 # 3 + (3 + 1)
-print(res)
+print(res) # 7
 
 # Using HOF with Lambda Functions
 increment_v2 = lambda x: x +1
 high_ord_func_v2 = lambda x, func: x + func(x)
 
 result = high_ord_func_v2(2, increment_v2)
-print(result)
+print(result) # 5
 
 # We can just pass a lambda function as argument
 result = high_ord_func_v2(2, lambda x: x + 2)
-print(result)
-## change
+# 2 + (2 + 2)
+print(result) # 6
+# change
+# 2 + (2 * 5) 
 result = high_ord_func_v2(2, lambda x: x * 5)
-print(result)
+print(result) # 12
 
 
 # In Python, a higher-order function (HOF) is a function that takes one or more functions as arguments, or returns a function as its result.
