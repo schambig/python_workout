@@ -13,6 +13,7 @@ increment_v2 = lambda x: x +1
 high_ord_func_v2 = lambda x, func: x + func(x)
 
 result = high_ord_func_v2(2, increment_v2)
+# 2 + (2 + 1)
 print(result) # 5
 
 # We can just pass a lambda function as argument
@@ -20,8 +21,8 @@ result = high_ord_func_v2(2, lambda x: x + 2)
 # 2 + (2 + 2)
 print(result) # 6
 # change
-# 2 + (2 * 5) 
 result = high_ord_func_v2(2, lambda x: x * 5)
+# 2 + (2 * 5) 
 print(result) # 12
 
 
