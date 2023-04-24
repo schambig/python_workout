@@ -21,3 +21,18 @@ print(result)
 
 # More about amp function:
 # https://www.w3schools.com/python/ref_func_map.asp
+
+
+# The map() function in Python is a higher-order function that takes a function and an iterable as arguments,
+# and returns a new iterable that contains the results of applying the function to each element of the original iterable.
+
+# For example, the following code uses the map() function to double the numbers in a list:
+
+#     def double(x):
+#     return 2 * x
+
+#     numbers = [1, 2, 3, 4, 5]
+
+#     doubled_numbers = map(double, numbers)
+
+#     print(doubled_numbers) # [2, 4, 6, 8, 10]
