@@ -29,10 +29,10 @@ print(result)
 # For example, the following code uses the map() function to double the numbers in a list:
 
 #     def double(x):
-#     return 2 * x
+#       return 2 * x
 
 #     numbers = [1, 2, 3, 4, 5]
 
-#     doubled_numbers = map(double, numbers)
+#     doubled_numbers = list(map(double, numbers)) # if no cast output is => <map object at 0x7f138f44f6d0>
 
 #     print(doubled_numbers) # [2, 4, 6, 8, 10]
