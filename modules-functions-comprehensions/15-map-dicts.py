@@ -15,7 +15,7 @@ items = [
 ]
 
 prices = list(map(lambda item: item['price'], items))
-print(items) # Print the above dictionary
+print(items) # Print the above dictionary, we get the same dict even if we made changes with map
 print(prices) # [100, 300, 200]
 
 # We need to define a function to pass it to map
@@ -25,4 +25,4 @@ def add_taxes(item):
 
 new_items = list(map(add_taxes, items))
 print(new_items) # Print the above dictionary including the new taxes:value pair
-print(items) # Print the same as the line above because map modifies the original dictionary
+print(items) # Print the same as the line above because add_taxes function modifies the original dictionary
