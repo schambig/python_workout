@@ -1,3 +1,4 @@
+# Original list of dictionaries
 items = [
   {
     'product': 'camisa',
@@ -14,12 +15,12 @@ items = [
 ]
 
 def add_taxes(item):
-  new_item = item.copy()
+  new_item = item.copy() # Make a copy of the original list to modify
   new_item['taxes'] = new_item['price'] * .19
   return new_item
 
 new_items = list(map(add_taxes, items))
 print('New list')
 print(new_items)
-print('Old list')
+print('Original list')
 print(items)
