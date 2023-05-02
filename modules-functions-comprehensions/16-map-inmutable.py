@@ -24,3 +24,12 @@ print('New list')
 print(new_items)
 print('Original list')
 print(items)
+
+
+# More about copy function:
+# Python List copy() Method: https://www.w3schools.com/python/ref_list_copy.asp
+# Python Dictionary copy() Method: https://www.w3schools.com/python/python_dictionaries_copy.asp
+# Python Set copy() Method: https://www.w3schools.com/python/ref_set_copy.asp
+
+# Shallow vs Deep Copying of Python Objects using 'copy module':
+# https://realpython.com/copying-python-objects/
