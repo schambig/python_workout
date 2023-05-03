@@ -33,3 +33,6 @@ print(items)
 
 # Shallow vs Deep Copying of Python Objects using 'copy module':
 # https://realpython.com/copying-python-objects/
+
+# How variables work in Python | Explained with Animations (YT video)
+# https://www.youtube.com/watch?v=0Om2gYU6clE
