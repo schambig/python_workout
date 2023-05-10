@@ -10,5 +10,8 @@ def accum(counter, item):
 
 # result = functools.reduce(accum, numbers)
 result = reduce(accum, numbers)
-
 print(result)
+
+# Now let's create a lambda function instead of 'def accum()'
+res = reduce(lambda sum, item: sum + item, numbers)
+print(res)
