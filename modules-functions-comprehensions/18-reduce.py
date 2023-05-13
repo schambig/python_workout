@@ -1,6 +1,7 @@
 # import functools
 from functools import reduce 
 
+
 numbers = [1, 2, 3, 4]
 
 def accum(counter, item):
