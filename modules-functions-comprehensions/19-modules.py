@@ -1,8 +1,8 @@
 import sys
-print(sys.path)
+print('path:', sys.path)
 
 import re
-text = 'Mi numero de telefono es 311 123 121, el codigo del pais es 57, mi numero de la suerte 3'
+text = 'Mi numero de telefono es 999 555 444, el codigo del pais es 51, mi numero de la suerte 7'
 result = re.findall('[0-9]+', text)
 print(result)
 
