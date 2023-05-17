@@ -22,3 +22,7 @@ import collections
 numbers = [1,1,2,1,2,1,4,5,3,3,21]
 counter = collections.Counter(numbers)
 print(counter) # Counter({1: 4, 2: 2, 3: 2, 4: 1, 5: 1, 21: 1})
+
+
+# More info about modules:
+# https://www.w3schools.com/python/python_modules.asp
