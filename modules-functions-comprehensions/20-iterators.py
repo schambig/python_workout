@@ -12,3 +12,6 @@ print(next(my_iter))
 #                          File "/home/salomon/githubRepos/python_workout/modules-functions-comprehensions/20-iterators.py", line 11, in <module>
 #                            print(next(my_iter))
 #                        StopIteration
+
+# More about Python Iterators:
+# https://www.w3schools.com/python/python_iterators.asp
