@@ -21,3 +21,6 @@ print(next(myiter)) # 2
 print(next(myiter)) # 3
 print(next(myiter)) # 4
 print(next(myiter)) # 5
+
+# More about Python Iterators:
+# https://www.w3schools.com/python/python_iterators.asp
