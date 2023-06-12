@@ -22,3 +22,6 @@ myiter = iter(myclass)
 
 for x in myiter:
   print(x)
+
+# More about Python Iterators:
+# https://www.w3schools.com/python/python_iterators.asp
