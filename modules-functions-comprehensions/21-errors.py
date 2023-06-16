@@ -1,21 +1,24 @@
-# print(0 / 0)
-# print(result)
-print('Hola')
+# print(0 / 0) # **ZeroDivisionError**: Raised when the second operator in a division is zero 
+# print(result) # **NameError**: Raised when a variable does not exist
+print('Hola') # This line won't be executed if lines above were uncommented
 
+# Executing the next two lines would not raise an exception
+# but if we change the lambda or the assert line an **AssertionError**: Raised when an assert statement fails, error will occur
 suma = lambda x,y: x + y
 assert suma(2,2) == 4
 
 print('Hola 2')
 
+# Now create our own exception
 age = 10
 if age < 18:
   raise Exception('No se permiten menores de edad')
 
-print('Hola 2')
+print('Hola 3') # This line won't be executed because of the **raise Exception** above
 
-# https://www.w3schools.com/python/python_ref_exceptions.asp
 # Built-in Exceptions
 # The table below shows built-in exceptions that are usually raised in Python:
+# https://www.w3schools.com/python/python_ref_exceptions.asp
 
 # Exception	Description
 # ArithmeticError:      Raised when an error occurs in numeric calculations
@@ -51,3 +54,6 @@ print('Hola 2')
 # UnicodeTranslateError:Raised when a unicode translation problem occurs
 # ValueError:           Raised when there is a wrong value in a specified data type
 # ZeroDivisionError:    Raised when the second operator in a division is zero
+
+# Getting Started With Testing in Python from Real Python
+# https://realpython.com/python-testing/
