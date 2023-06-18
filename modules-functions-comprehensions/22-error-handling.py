@@ -13,3 +13,6 @@ except Exception as error:
 
 print('Hola')
 print('Hola 2')
+
+# Python Try Except
+# https://www.w3schools.com/python/python_try_except.asp
