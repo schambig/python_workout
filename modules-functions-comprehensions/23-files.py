@@ -1,15 +1,17 @@
 file = open('./zenpy.txt')
-# print(file.read()) #
-# print(file.readline())
-# print(file.readline())
-# print(file.readline())
-# print(file.readline())
+# print(file.read()) # The read() method reads (prints) the whole content
+# print(file.readline()) # This will read line by line
+# print(file.readline()) # "
+# print(file.readline()) # "
+# print(file.readline()) # "
 
+# This will also read (print) the whole file, line by line
 for line in file:
   print(line)
 
-file.close()
+file.close() # The close() method closes the file, freeing space memory
 
+# This will also read (print) the file content and also close it, so no need to use 'file.close()' as in line 12
 with open('./zenpy.txt') as file:
   for line in file:
     print(line)
