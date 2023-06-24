@@ -1,6 +1,6 @@
-with open('./text.txt', 'w+') as file:
+with open('./text.txt', 'w+') as file: # See notes for: w, r, r+, a, a+
   for line in file:
     print(line)
-  file.write('nuevas cosas en este archivo\n')
-  file.write('otra linea\n')
-  file.write('mas linea\n')
+  file.write('This is a new line\n')
+  file.write('Another line\n')
+  file.write('And more lines yay!\n')
