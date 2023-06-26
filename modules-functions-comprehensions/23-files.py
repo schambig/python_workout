@@ -37,3 +37,6 @@ But this guarantees that the file is closed at a known time.
 Any object that defines __enter__ and __exit__ is known as a context manager.
 Files are the most famous, but other objects (e.g., threading.Lock) also support them.
 '''
+
+# Python File Open
+# https://www.w3schools.com/python/python_file_handling.asp
