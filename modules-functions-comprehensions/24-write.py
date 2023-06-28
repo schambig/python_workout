@@ -37,3 +37,6 @@ Files are the most famous, but other objects (e.g., threading.Lock) also support
 #       If the file does not exist, the file is created.
 #       Any new data that you write to the file will be appended to the end of the file. You can also read the existing data in the file.
 
+# Python File Write
+# https://www.w3schools.com/python/python_file_write.asp
+
