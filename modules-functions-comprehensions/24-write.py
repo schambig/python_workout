@@ -1,4 +1,4 @@
-with open('./text.txt', 'w+') as file: # See notes for: w, r, r+, a, a+
+with open('./text.txt', 'w+') as file: # See notes for: r, r+, w, w+, a, a+ explanation
   for line in file:
     print(line)
   file.write('This is a new line\n')
@@ -27,15 +27,15 @@ Files are the most famous, but other objects (e.g., threading.Lock) also support
 '''
 
 # NOTES:
-# r     Opens the file for reading only.
-# r+	Opens the file for both reading and writing. If the file does not exist, a FileNotFoundError exception is raised.
-# w	    Opens the file for writing only. Any existing data in the file will be overwritten.
-# w+	Opens the file for both writing and reading. Any existing data in the file will be overwritten.
-#       If the file does not exist, the file is created.
-# a	    Opens the file for appending. Any new data that you write to the file will be appended to the end of the file.
-# a+	Opens the file for both appending and reading.
-#       If the file does not exist, the file is created.
-#       Any new data that you write to the file will be appended to the end of the file. You can also read the existing data in the file.
+# r   Opens the file for reading only.
+# r+  Opens the file for both reading and writing. If the file does not exist, a FileNotFoundError exception is raised.
+# w   Opens the file for writing only. Any existing data in the file will be overwritten.
+# w+  Opens the file for both writing and reading. Any existing data in the file will be overwritten.
+#     If the file does not exist, the file is created.
+# a   Opens the file for appending. Any new data that you write to the file will be appended to the end of the file.
+# a+  Opens the file for both appending and reading.
+#     If the file does not exist, the file is created.
+#     Any new data that you write to the file will be appended to the end of the file. You can also read the existing data in the file.
 
 # Python File Write
 # https://www.w3schools.com/python/python_file_write.asp
