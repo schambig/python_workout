@@ -16,6 +16,14 @@ def read_csv(path):
 if __name__ == '__main__':
   data = read_csv('./app/world_population.csv')
   print(data[162]) # Peru
+
+  # Print the whole dictionary
   # for country in data:
   #   if country['Country/Territory'] == 'Peru':
   #     print(country)
+
+  # Print the key: value pair formatted
+  # for key, value in data[162].items():
+    # print(key, value)
+    # print(f"{key}: {value}")
+    # print("{}: {}".format(key, value))
