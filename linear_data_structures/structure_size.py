@@ -6,7 +6,7 @@ colecciones = {
     "list": list(),
     "dict": dict(),
     "set": set(),
-    # mutables
+    # immutables
     "tuple": tuple(),
     }
 
