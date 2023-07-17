@@ -13,7 +13,7 @@ Methods:
 class Array(object):
     """Represents an array."""
 
-    def __init__(self, capacity, fill_value = None):
+    def __init__(self, capacity, fill_value=None):
         """
         Args:
             capacity (int): static size of the array.
