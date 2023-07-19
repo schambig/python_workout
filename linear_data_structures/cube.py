@@ -20,7 +20,7 @@ class Cube(object):
         for row in range(rows):
             self.data[row] = Array(cols)
             for col in range(cols):
-                    self.data[row][col] = Array(depth, fill_value)
+                self.data[row][col] = Array(depth, fill_value)
 
     def get_height(self):
         """Returns the number of rows."""
