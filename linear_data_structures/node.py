@@ -7,7 +7,7 @@ for demonstrative purposes.
 The node methods should be incorporated into the Node class.
 """
 
-class Node(object):
+class Node():
     """Represents a single linked node."""
     def __init__(self, data, next=None):
         self.data = data
