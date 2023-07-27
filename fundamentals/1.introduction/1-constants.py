@@ -11,13 +11,13 @@ print(COURSE_TITLE)
 # Keywords are the reserved words in Python. We cannot use a keyword as a variable name,
 # function name or any other identifier.
 
-# False     await	    else	    import	    pass
-# None      break	    except	    in	        raise
-# True	    class	    finally     is	        return
-# and       continue	for	        lambda	    try
-# as        def	        from	    nonlocal    while
-# assert	del	        global	    not	        with
-# async	    elif	    if	        or	        yield
+# False     await       else        import      pass
+# None      break       except      in          raise
+# True      class       finally     is          return
+# and       continue    for         lambda      try
+# as        def         from        nonlocal    while
+# assert    del         global      not         with
+# async     elif        if          or          yield
 
 # The above keywords may get altered in different versions of Python.
 # Some extra might get added or some might be removed.
