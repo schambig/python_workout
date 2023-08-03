@@ -1,5 +1,5 @@
 '''
-Relational Operators (to compare), we get a Boolean value as result
+Relational Operators (to compare numeric types), we get a Boolean value as result
 >, <, >=, <=, ==, !=
 '''
 first_number = 10
