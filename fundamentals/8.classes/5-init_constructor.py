@@ -45,6 +45,7 @@ class Book:
 # Creating instances of the Book class
 book1 = Book(title="The Great Gatsby", author="F. Scott Fitzgerald", isbn="978-0743273565")
 book2 = Book(title="To Kill a Mockingbird", author="Harper Lee", isbn="978-0061120084", available=False)
+book3 = Book("1984", "George Orwell", isbn="978-0140817744")
 
 # Displaying information about each book
 book1.display_info()
@@ -53,12 +54,17 @@ book1.display_info()
 book2.display_info()
 # Title: To Kill a Mockingbird, Author: Harper Lee, ISBN: 978-0061120084
 # Status: Not Available
+book3.display_info()
+# Title: 1984, Author: George Orwell, ISBN: 978-0140817744
+# Status: Available
 
 # Borrowing and returning books
 book1.borrow_book()  # Borrowing The Great Gatsby by F. Scott Fitzgerald.
 book2.borrow_book()  # Sorry, To Kill a Mockingbird is not available for borrowing.
+book3.borrow_book()  # Borrowing 1984 by George Orwell.
 book1.return_book()  # Returning The Great Gatsby by F. Scott Fitzgerald.
 book2.return_book()  # Returning To Kill a Mockingbird by Harper Lee.
+book3.return_book()  # Returning 1984 by George Orwell.
 
 '''
 In this example:
