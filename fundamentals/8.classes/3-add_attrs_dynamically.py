@@ -4,8 +4,7 @@ are two ways to dynamically add instance attributes to an object in Python AT RU
 Here are the main differences between them:
 '''
 
-
-'''Syntax:'''
+'''SYNTAX:'''
 '''setattr: It's a built-in function that takes three arguments:
 the object, the attribute name as a string, and the attribute value.'''
 setattr(object, attribute_name, attribute_value)
@@ -14,7 +13,7 @@ setattr(object, attribute_name, attribute_value)
 object.attribute_name = attribute_value
 
 
-'''Readability:'''
+'''READABILITY:'''
 '''setattr: Explicitly shows that you are dynamically setting an attribute using a function call.
 This can be helpful for clarity, especially when attribute names are generated dynamically.'''
 class Person:
@@ -43,7 +42,7 @@ person.name = "John Doe"
 print(person.name)
 
 
-'''Flexibility:'''
+'''FlLEXIBILITY:'''
 '''setattr: Offers more flexibility, especially when attribute names are generated dynamically
 or retrieved from external data sources.
 You can construct the attribute name as a string and pass it to setattr.'''
@@ -67,7 +66,7 @@ person = Person()
 person.name_1 = "John Doe"  # Raises AttributeError if name_1 is not a valid attribute
 
 
-'''Error Handling:'''
+'''ERROR HANDLING:'''
 '''setattr: Since attribute names are provided as strings,
 it allows for more dynamic handling and validation.
 You can use conditional statements or try-except blocks to handle potential errors
@@ -95,7 +94,7 @@ person = Person()
 person.invalid_attribute = "John Doe"  # Raises AttributeError if invalid_attribute is not a valid attribute
 
 
-'''Consistency:'''
+'''CONSISTENCY:'''
 '''setattr: Provides a consistent interface for setting attributes,
 whether the attribute names are known at compile-time or generated dynamically.
 This consistency can be useful in certain scenarios.'''
