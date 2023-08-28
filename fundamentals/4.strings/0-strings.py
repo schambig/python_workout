@@ -25,6 +25,6 @@ print(list_languages2) # ['Python', 'Ruby', 'Java-Rust-C++-C']
 # Create a string from a list usign join() method (opposite from split() method)
 levels = ['Fundamental', 'Intermediate', 'Advanced', 'Asian']
 
-string_levels = '@@'.join(levels) # we can use any character we need
+string_levels = '@@'.join(levels) # we can use any character we need, like space ' '
 print(string_levels) # Fundamental@@Intermediate@@Advanced@@Asian
 print(type(string_levels)) # str
