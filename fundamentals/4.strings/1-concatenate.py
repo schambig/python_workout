@@ -13,7 +13,7 @@ full_name = 'Mr. ' + name + ' ' + name2 + '.'
 full_name2 = 'Mr. %s %s.' % (name, name2) 
 
 # Using format() function
-full_name3 = 'Mr. {} {}.'.format(name, name2) # {name} also works
+full_name3 = 'Mr. {} {}.'.format(name, name2) # {name} {name2} also works
 
 # Using f-strings
 full_name4 = f'Mr. {name} {name2}.'
