@@ -12,13 +12,15 @@ full_name = 'Mr. ' + name + ' ' + name2 + '.'
 # Using % operator to concatenate
 full_name2 = 'Mr. %s %s.' % (name, name2) 
 
-# Using format() function
-full_name3 = 'Mr. {} {}.'.format(name, name2) # {name} {name2} also works
+# Using format() function, in 2nd form we can manipulate the variables order
+full_name3 = 'Mr. {} {}.'.format(name, name2)
+full_name3 = 'Mr. {nombre2} {nombre}.'.format(nombre=name, 
+                                              nombre2=name2)
 
 # Using f-strings
 full_name4 = f'Mr. {name} {name2}.'
  
 print(full_name)
 print(full_name2)
-print(full_name3)
+print(full_name3) # Mr. Luis Salomon.
 print(full_name4)
