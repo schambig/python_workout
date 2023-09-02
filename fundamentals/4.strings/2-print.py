@@ -10,4 +10,6 @@ REMEMBER!! print() functions just prints to stdout
 name = 'Salomon'
 name2 = 'Luis'
 
-print(name, name2, 'Chambi', sep='*') # we can use different chars as sep
+print(name, name2, 'Chambi', sep=' ') # we can use different chars as sep
+print(name, name2, 'Chambi', sep='^', end='\n') # a jump line at the end
+
