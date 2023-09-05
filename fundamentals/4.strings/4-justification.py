@@ -15,5 +15,5 @@ print(message1, '.')
 message2 = message.rjust(20) # 20 spaces to the right
 print(message2)
 
-message3 = message.center(20) # 10 to the left and 20 to the right
+message3 = message.center(20) # 10 to the left and 10 to the right
 print(message3)
