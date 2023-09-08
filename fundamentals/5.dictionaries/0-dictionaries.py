@@ -20,9 +20,9 @@ dictionary = {'total': 55, 10: 'Python Course', (1, 2, 3): True}
 # Accessing Keys and Values:
 diccionario = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
 
-# keys
-# values
-# items
+# keys = my_dict.keys() # Get a list of keys
+# values = my_dict.values() # Get a list of values
+# items = my_dict.items() # Get a list of key-value pairs as tuples
 
 keys = diccionario.keys() # note that I;m not casting to tuple
 print(keys) # dict_keys(['a', 'b', 'c', 'd']))
