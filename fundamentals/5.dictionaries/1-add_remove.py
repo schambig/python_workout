@@ -1,6 +1,8 @@
 '''
 We can add new key-value pairs using the next syntax: dict['key'] = 'value'
 We can dremove/delete a key-value pair using the `del` kwyword: del dict['key']
+    Also using the pop() method
+    If we wanr to remove all the key-value pairs we can use clear() method
 '''
 
 elements = {}
