@@ -25,3 +25,9 @@ my_variable = None
 
 # Expressions that evaluate to False in comparison operations are obviously falsy.
 result = (2 == 3)  # result is False
+
+# Useful way to proof flasy
+value = 0
+
+if not value:
+    print("The value is falsy")
