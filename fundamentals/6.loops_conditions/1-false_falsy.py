@@ -27,6 +27,7 @@ my_variable = None
 result = (2 == 3)  # result is False
 
 # Useful way to proof flasy
+# we can use all of the above: False, 0.0, '', "", {}, [], None
 value = 0
 
 if not value:
