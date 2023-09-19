@@ -15,7 +15,7 @@ Some common types of conditions in Python:
                                 (evaluate to True) or "falsy" (evaluate to False)
                                 in a boolean context.
                                 This includes values like 0, None,
-                                empty sequences ([], ""),
+                                empty sequences like: [], "", '', (), {}
                                 and objects with a custom __bool__ or __len__ method.
 '''
 
