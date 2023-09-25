@@ -21,4 +21,17 @@ if lista: # this will be treated as False
 else:
     var = name
 
+# The above can be one line
+var2 = lista or name
+
 print(var) # Salo
+print(var2) # Salo
+
+'''
+Keep in mind that this method might not be suitable for all cases,
+especially when the variable can have falsy values that are not intended to be replaced
+by the default value. In such cases, it's better to use an explicit if-else statement for clarity.
+'''
+x = 0
+y = "Default Value" if x is None else x
+print(y)  # 0
