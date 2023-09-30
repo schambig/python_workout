@@ -22,6 +22,11 @@ while True:
     count += 1
     if count >= 5:
         break
+    # Output:
+    # 1
+    # 2
+    # 3
+    # 4
 
 # The continue statement is used to skip the print(num) statement for even numbers.
 # As a result, only odd numbers will be printed.
@@ -30,3 +35,17 @@ for num in numbers:
     if num % 2 == 0:
         continue  # Skip even numbers
     print(num)
+    # Output:
+    # 1
+    # 2
+    # 3
+
+course = 'Fundamental Excercise with Python'
+
+for char in course:
+
+    if char == 'P':
+        # break # print: 'Fundamental Excercise with'
+        continue # print: 'Fundamental Excercise with ython'
+
+    print(char)
