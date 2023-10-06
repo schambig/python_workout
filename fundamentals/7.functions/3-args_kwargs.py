@@ -44,3 +44,27 @@ example_function(1, 2, 3, key1="value1", key2="value2")
 # First argument: 1
 # Additional positional arguments: (2, 3)
 # Additional keyword arguments: {'key1': 'value1', 'key2': 'value2'}
+
+# More functions as examples:
+def promedio(*args):
+    print(args)
+    print(type(args)) # Tupla
+    return sum(args) / len(args)
+
+print(promedio(1, 2, 3, 4, 5, 6))
+
+def usuarios(**kwargs):
+    print(kwargs) # Dict
+    print(type(kwargs))
+
+print(usuarios(
+    user1='Salo',
+    user2='Luis',
+    user3='Motorama'
+))
+
+def combinacion(p1, p2, *args, **kwargs):
+    print(args)
+    print(kwargs)
+
+combinacion(1, 2, 3, 4, 5, param=True, course='Python')
