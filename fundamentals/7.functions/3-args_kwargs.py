@@ -57,14 +57,20 @@ def usuarios(**kwargs):
     print(kwargs) # Dict
     print(type(kwargs))
 
-print(usuarios(
+usuarios(
     user1='Salo',
     user2='Luis',
-    user3='Motorama'
-))
+    user3='Motorama')
 
 def combinacion(p1, p2, *args, **kwargs):
-    print(args)
-    print(kwargs)
+    print('p1 parameter:', p1)
+    print('p2 parameter:', p2)
+    print('Positional arguments:', args)
+    print('Keyword arguments:', kwargs)
 
 combinacion(1, 2, 3, 4, 5, param=True, course='Python')
+# Output:
+# p1 parameter: 1
+# p2 parameter: 2
+# Positional arguments: (3, 4, 5)
+# Keyword arguments: {'param': True, 'course': 'Python'}
