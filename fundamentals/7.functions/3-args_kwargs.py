@@ -53,6 +53,7 @@ def promedio(*args):
 
 print(promedio(1, 2, 3, 4, 5, 6))
 
+
 def usuarios(**kwargs):
     print(kwargs) # Dict
     print(type(kwargs))
@@ -61,6 +62,7 @@ usuarios(
     user1='Salo',
     user2='Luis',
     user3='Motorama')
+
 
 def combinacion(p1, p2, *args, **kwargs):
     print('p1 parameter:', p1)
