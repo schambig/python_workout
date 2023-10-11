@@ -3,6 +3,15 @@ Nested functions in Python are functions that are defined inside of other functi
 also known as inner functions.
 These inner functions have access to the variables and scope of the outer function,
 which can be useful for organizing code and creating closures.
+
+Here are some of the benefits of using nested functions:
+    Encapsulation: Nested functions can help to encapsulate code by hiding implementation
+                    details from the outside world.
+    Closures: Nested functions can be used to create closures, which are functions that
+                remember and retain values from the enclosing scope even after the enclosing
+                function has finished executing.
+    Code organization: Nested functions can help to organize code by grouping related functions
+                        together.
 '''
 
 # Simple examples:
