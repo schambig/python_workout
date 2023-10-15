@@ -29,6 +29,7 @@ def callback_function(result):
 # Use the perform_operation function with the callback
 perform_operation(2.3, 3.3, callback_function) # The result is: 5.6
 
+
 # Second simple example:
 average = lambda *args: sum(args) / len(args) # use lambda cos this isn't a complicated ope
 passing_grade = lambda grade: grade >= 7
@@ -40,4 +41,4 @@ def show_message(func_average, func_passing_grade, *args):
     else:
         print('You didn\'t pass')
 
-show_message(average, passing_grade, 10, 10, 8, 7, 5)
+show_message(average, passing_grade, 10, 10, 8, 7, 5) # Congratulations you passed with 8.0
