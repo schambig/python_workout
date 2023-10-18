@@ -1,6 +1,6 @@
 '''
 A docstring is a string literal that occurs as the first statement in
-a module, function, class, or method definition.
+a module, function, class, or method definition. (4 documentable objects!!)
 Its purpose is to provide documentation about the object it belongs to.
 Docstrings are used to describe the purpose, usage, and behavior of the code
 and are accessible through the __doc__ attribute or by using the help() function.
