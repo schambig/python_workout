@@ -9,7 +9,7 @@ the outer function's local variables.
 '''
 
 # `mostrar_mensaje()` is a closure function since it captures and remembers/retains
-# access to the local variable `message`from the outer `function saludar()`
+# access to the local variable `message`from the outer function `saludar()`
 def saludar(username):
     mensaje = f'Hola {username}'  # Local variable
 
@@ -44,9 +44,9 @@ result = closure_instance(5)
 print(result)  # 15
 
 '''
-`outer_function` takes an argument x and defines an inner function inner_function.
-`Inner_function` is a closure because it references the variable x from the outer function.
-The closure retains access to x even after outer_function has completed.
+`outer_function` takes an argument x and defines an inner function `inner_function`.
+`inner_function` is a closure because it references the variable `x` from the outer function.
+The closure retains access to x even after `outer_function` has completed.
 `outer_function(10)` returns an instance of the closure, effectively "closing over" the value 10.
 `closure_instance(5)` then uses the closure to add 5 to the captured value of x,
 resulting in the output 15.
