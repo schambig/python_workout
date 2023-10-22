@@ -10,11 +10,11 @@ def print_triangle(size, char):
             tri += '\n'
     return tri
 
-print(print_triangle(1, '#'))
-print(print_triangle(2, '$'))
-print(print_triangle(3, '@'))
-print(print_triangle(7, '&'))
-print(print_triangle(10, '?'))
+# print(print_triangle(1, '#'))
+# print(print_triangle(2, '$'))
+# print(print_triangle(3, '@'))
+# print(print_triangle(7, '&'))
+# print(print_triangle(10, '?'))
 
 
 # # Directly printing
