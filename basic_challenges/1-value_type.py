@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-
 def found_type(value):
     return type(value)
 
