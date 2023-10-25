@@ -17,6 +17,6 @@ def is_leap_year(year):
 #     else:
 #         return False
 
-print(is_leap_year(2000))
-print(is_leap_year(-2024))
-print(is_leap_year(1984.5))
+# print(is_leap_year(2000))
+# print(is_leap_year(-2024))
+# print(is_leap_year(1984.5))
