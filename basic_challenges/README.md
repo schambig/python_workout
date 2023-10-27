@@ -23,7 +23,7 @@ This table contains a brief description of the working files of the project, cli
 
 | Filename | Description/Task |
 | --- | --- |
-| <pre>[1-return_type.py](1-return_type.py)</pre><!--@schambig--> | In this challenge, you will find a function called `found_type` that takes a parameter called `value`. Your task is to determine the data type of the value parameter and return it from the solution `found_type`.|
+| <pre>[1-value_type.py](1-return_type.py)</pre><!--@schambig--> | In this challenge, you will find a function called `found_type` that takes a parameter called `value`. Your task is to determine the data type of the value parameter and return it from the solution `found_type`.|
 ```
 Input:
 
