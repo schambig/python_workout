@@ -39,9 +39,19 @@ Output:
 ```
 | Filename | Description/Task |
 | --- | --- |
-| <pre>[file name](file.link)</pre><!--@schambig--> | Description.|
+| <pre>[2-calculate_tip.py](2-calculate_tip.py)</pre><!--@schambig--> | In this challenge, you will need to calculate the tip that restaurant customers should leave based on their bill. The `calculate_tip` function will receive two parameters: `bill_amount`, representing the total cost of what was consumed, and `tip_percentage`, representing the percentage of the tip to leave. Both values will be of type float and will always be positive, including 0. The function should return the tip amount as a number.|
 ```
-Example
+Input: calculate_tip(100, 10);
+Output: 10;
+
+Input: calculate_tip(1524.33, 25);
+Output: 381.08;
+```
+| Filename | Description/Task |
+| --- | --- |
+| <pre>[]()</pre><!--@schambig--> |  |
+```
+
 ```
 
 
