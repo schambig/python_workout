@@ -39,7 +39,7 @@ Output:
 ```
 | Filename | Description/Task |
 | --- | --- |
-| <pre>[2-calculate_tip.py](2-calculate_tip.py)</pre><!--@schambig--> | In this challenge, you will need to calculate the tip that restaurant customers should leave based on their bill. The `calculate_tip` function will receive two parameters: `bill_amount`, representing the total cost of what was consumed, and `tip_percentage`, representing the percentage of the tip to leave. Both values will be of type float and will always be positive, including 0. The function should return the tip amount as a number.|
+| <pre>[2-caculate_tip.py](2-caculate_tip.py)</pre><!--@schambig--> | In this challenge, you will need to calculate the tip that restaurant customers should leave based on their bill. The `calculate_tip` function will receive two parameters: `bill_amount`, representing the total cost of what was consumed, and `tip_percentage`, representing the percentage of the tip to leave. Both values will be of type float and will always be positive, including 0. The function should return the tip amount as a number.|
 ```
 Input: calculate_tip(100, 10)
 Output: 10
@@ -49,7 +49,7 @@ Output: 381.08
 ```
 | Filename | Description/Task |
 | --- | --- |
-| <pre>[3-is_leap_year.py]([3-is_leap_year.py)</pre><!--@schambig--> | In this Python challenge, you need to create the logic for the `is_leap_year` function, which determines whether a year is a leap year or not. A year is a leap year if it meets the following conditions:<br> • It is divisible by 4, but not by 100.<br> • If it is divisible by 100, it must also be divisible by 400.<br> The `is_leap_year` function takes a single parameter, which is the year to evaluate. It should return True if the year is a leap year or False if it is not. Keep in mind that the function should be able to handle non-integer or negative values. |
+| <pre>[3-is_leap_year.py](3-is_leap_year.py)</pre><!--@schambig--> | In this Python challenge, you need to create the logic for the `is_leap_year` function, which determines whether a year is a leap year or not. A year is a leap year if it meets the following conditions:<br> • It is divisible by 4, but not by 100.<br> • If it is divisible by 100, it must also be divisible by 400.<br> The `is_leap_year` function takes a single parameter, which is the year to evaluate. It should return True if the year is a leap year or False if it is not. Keep in mind that the function should be able to handle non-integer or negative values. |
 ```
 Input: 2000
 Output: True
