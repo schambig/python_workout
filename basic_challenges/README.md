@@ -26,13 +26,11 @@ This table contains a brief description of the working files of the project, cli
 | <pre>[1-value_type.py](1-value_type.py)</pre><!--@schambig--> | In this challenge, you will find a function called `found_type` that takes a parameter called `value`. Your task is to determine the data type of the value parameter and return it from the `found_type` function.|
 ```
 Input:
-
 found_type(1)
 found_type("Salo")
 found_type(True)
 
 Output:
-
 'int'
 'str'
 'bool'
@@ -51,13 +49,13 @@ Output: 381.08
 | --- | --- |
 | <pre>[3-is_leap_year.py](3-is_leap_year.py)</pre><!--@schambig--> | In this Python challenge, you need to create the logic for the `is_leap_year` function, which determines whether a year is a leap year or not. A year is a leap year if it meets the following conditions:<br> • It is divisible by 4, but not by 100.<br> • If it is divisible by 100, it must also be divisible by 400.<br> The `is_leap_year` function takes a single parameter, which is the year to evaluate. It should return True if the year is a leap year or False if it is not. Keep in mind that the function should be able to handle non-integer or negative values. |
 ```
-Input: 2000
+Input: is_leap_year(2000)
 Output: True
 
-Input: -2024
+Input: is_leap_year(-2024)
 Output: False
 
-Input: 1984.25
+Input: is_leap_year(1984.25)
 Output: False
 ```
 | Filename | Description/Task |
