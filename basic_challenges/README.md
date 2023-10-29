@@ -35,6 +35,7 @@ Output:
 'str'
 'bool'
 ```
+
 | Filename | Description/Task |
 | --- | --- |
 | <pre>[2-caculate_tip.py](2-caculate_tip.py)</pre><!--@schambig--> | In this challenge, you will need to calculate the tip that restaurant customers should leave based on their bill. The `calculate_tip` function will receive two parameters: `bill_amount`, representing the total cost of what was consumed, and `tip_percentage`, representing the percentage of the tip to leave. Both values will be of type float and will always be positive, including 0. The function should return the tip amount as a number.|
@@ -45,6 +46,7 @@ Output: 10
 Input: calculate_tip(1524.33, 25)
 Output: 381.08
 ```
+
 | Filename | Description/Task |
 | --- | --- |
 | <pre>[3-is_leap_year.py](3-is_leap_year.py)</pre><!--@schambig--> | In this Python challenge, you need to create the logic for the `is_leap_year` function, which determines whether a year is a leap year or not. A year is a leap year if it meets the following conditions:<br> • It is divisible by 4, but not by 100.<br> • If it is divisible by 100, it must also be divisible by 400.<br> The `is_leap_year` function takes a single parameter, which is the year to evaluate. It should return True if the year is a leap year or False if it is not. Keep in mind that the function should be able to handle non-integer or negative values. |
@@ -58,6 +60,27 @@ Output: False
 Input: is_leap_year(1984.25)
 Output: False
 ```
+
+| Filename | Description/Task |
+| --- | --- |
+| <pre>[4-print_triangle.py](4-print_triangle.py)</pre><!--@schambig--> | In this challenge, you need to draw an triangle using loops. You will receive two parameters: `size` and `char`, which define the number of rows the triangle will have and the character with which the triangle should be constructed, respectively. Additionally, the triangle should be centered, which means the same number of characters should be on both sides. Remember that to create a line break, you should use "\n". Don't forget to remove it from the last part, and you should return all of this in a variable. |
+```
+Input: printTriangle(3, "*")
+Output:
+  *
+ ***
+*****
+
+Input: printTriangle(6, "$")
+Output:
+     $
+    $$$
+   $$$$$
+  $$$$$$$
+ $$$$$$$$$
+$$$$$$$$$$$
+```
+
 | Filename | Description/Task |
 | --- | --- |
 | <pre>[]()</pre><!--@schambig--> |  |
