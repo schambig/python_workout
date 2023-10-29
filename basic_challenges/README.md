@@ -65,13 +65,13 @@ Output: False
 | --- | --- |
 | <pre>[4-print_triangle.py](4-print_triangle.py)</pre><!--@schambig--> | In this challenge, you need to draw an triangle using loops. You will receive two parameters: `size` and `char`, which define the number of rows the triangle will have and the character with which the triangle should be constructed, respectively. Additionally, the triangle should be centered, which means the same number of characters should be on both sides. Remember that to create a line break, you should use "\n". Don't forget to remove it from the last part, and you should return all of this in a variable. |
 ```
-Input: printTriangle(3, "*")
+Input: print_triangle(3, "*")
 Output:
   *
  ***
 *****
 
-Input: printTriangle(6, "$")
+Input: print_triangle(6, "$")
 Output:
      $
     $$$
