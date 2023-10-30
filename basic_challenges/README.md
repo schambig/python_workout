@@ -83,10 +83,42 @@ $$$$$$$$$$$
 
 | Filename | Description/Task |
 | --- | --- |
+| <pre>[5-famous_cat.py](5-famous_cat.py)</pre><!--@schambig--> | In this challenge, you need to find the most famous kitty based on their number of followers. You will receive a list of dictionaries, each containing the following properties:<br> • `name`: the kitty's name.<br> • `followers`: a list of numbers, where each number represents the followers on a particular social network.<br> Your task is to return a list with the names of the cats that have only the highest number of followers. If there are two or more cats with the same maximum number of followers, you should include them in the resulting list, maintaining the order in which they appear in the input list. |
+```
+Input: find_famous_cat([
+  {
+    "name": "Luna",
+    "followers": [500, 200, 300]
+  },
+  {
+    "name": "Michi",
+    "followers": [100, 300]
+  },
+])
+Output: ["Luna"]
+
+Input: find_famous_cat([
+  {
+    "name": "Mimi",
+    "followers": [320, 120, 70]
+  },
+  {
+    "name": "Milo",
+    "followers": [400, 300, 100, 200]
+  },
+  {
+    "name": "Gizmo",
+    "followers": [250, 750]
+  }
+])
+Output: ["Milo", "Gizmo"]
+```
+
+| Filename | Description/Task |
+| --- | --- |
 | <pre>[]()</pre><!--@schambig--> |  |
 ```
 ```
-
 
 <!-- <pre><br><br></pre> • <br>•-->
 
