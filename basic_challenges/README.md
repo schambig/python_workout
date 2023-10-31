@@ -116,6 +116,44 @@ Output: ["Milo", "Gizmo"]
 
 | Filename | Description/Task |
 | --- | --- |
+| <pre>[6-get_average.py](6-get_average.py)</pre><!--@schambig--> | In this challenge, you will need to calculate the overall class average as well as the individual average for each student. For this purpose, you will be provided with a list of dictionaries, each of which represents a student and has the following properties:<br> • `name`: The student's name.<br> • `grades`: The grades for each subject of the student.<br> Based on this information, you should return a new dictionary that has the property `class_average` with the class average and a list of `students` with the students and their individual averages.<br> It's important to mention that the averages should be calculated accurately and rounded to two decimal places to ensure the tests pass without any issues. |
+```
+Input: get_student_average([
+  {
+    "name": "Pedro",
+    "grades": [90, 87, 88, 90],
+  },
+  {
+    "name": "Jose",
+    "grades": [99, 71, 88, 96],
+  },
+  {
+    "name": "Maria",
+    "grades": [92, 81, 80, 96],
+  },
+])
+
+Output: {
+  "class_average": 88.17,
+  "students": [
+    {
+      "name": "Pedro",
+      "average": 88.75
+    },
+    {
+      "name": "Jose",
+      "average": 88.5
+    },
+    {
+      "name": "Maria",
+      "average": 87.25
+    }
+  ]
+}
+```
+
+| Filename | Description/Task |
+| --- | --- |
 | <pre>[]()</pre><!--@schambig--> |  |
 ```
 ```
