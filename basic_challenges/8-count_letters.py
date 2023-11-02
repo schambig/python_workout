@@ -15,6 +15,7 @@ def count_letters(phrase):
 #     dic[i] = dic.get(i, 0) + 1
 #   return dic
 
+# Performance is better with the second function.
 # While in this very simple example there is no noticeable difference,
 # it will be useful to keep in mind when iterating and creating much larger and more complex elements.
 
