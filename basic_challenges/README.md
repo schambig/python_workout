@@ -181,9 +181,29 @@ Output: {
 
 | Filename | Description/Task |
 | --- | --- |
+| <pre>[8-count_letters.py](8-count_letters.py)</pre><!--@schambig--> | In this challenge, you will need to implement the logic for a function that counts the occurrences of each letter in a text string and stores it in a dictionary.<br>It's important to mention that the function should be case-sensitive, meaning uppercase and lowercase letters should be considered different. |
+```
+Input: "Hola mundo"
+
+Output: {
+  'H': 1, 
+  'o': 2, 
+  'l': 1, 
+  'a': 1, 
+  ' ': 1, 
+  'M': 1, 
+  'u': 1, 
+  'n': 1, 
+  'd': 1
+}
+```
+
+| Filename | Description/Task |
+| --- | --- |
 | <pre>[]()</pre><!--@schambig--> |  |
 ```
 ```
+
 <!-- <pre><br><br></pre> • <br>•-->
 
 
