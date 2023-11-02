@@ -154,10 +154,36 @@ Output: {
 
 | Filename | Description/Task |
 | --- | --- |
+| <pre>[7-packages_info.py](7-packages_info.py)</pre><!--@schambig--> | In this challenge, you are working for a cargo transport company that needs to keep a record of the packages being shipped on each trip. To achieve this, you will be provided with a list of tuples, each of which represents a package and includes the following properties:<br> • `id`, `weight`, `destination`<br> Based on this information, you need to create a function that calculates the total weight of the packages and the quantity of packages being sent to each destination. To do this, you should return a new dictionary with the following properties:<br> • `total_weight`: The total weight of the packages, rounded to two decimal places.<br> • `destinations`: A dictionary with destinations as keys and the quantity of packages as values.<br> It's important to note that the function should round the total weight to two decimal places, and each destination should appear only once in the dictionary. |
+```
+Input: get_packages_info([
+  (1, 20, "Mexico"),
+  (2, 15.5, "Colombia"),
+  (3, 30, "Mexico"),
+  (4, 12, "Argentina"),
+  (5, 8.2, "Colombia"),
+  (6, 25, "Mexico"),
+  (7, 18.7, "Argentina"),
+  (8, 5, "Colombia"),
+  (9, 22.3, "Argentina"),
+  (10, 14.8, "Colombia")
+])
+
+Output: {
+  "total_weight": 171.50,
+  "destinations": {
+    "Mexico": 3,
+    "Colombia": 4,
+    "Argentina": 3
+  }
+}
+```
+
+| Filename | Description/Task |
+| --- | --- |
 | <pre>[]()</pre><!--@schambig--> |  |
 ```
 ```
-
 <!-- <pre><br><br></pre> • <br>•-->
 
 
