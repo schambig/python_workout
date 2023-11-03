@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# Longest version
+# Longest version, using a variable, a loop and a conditional
 def find_largest_palindrome(words):
   pals = [w for w in words if w == w[::-1]]
   pal = ""
