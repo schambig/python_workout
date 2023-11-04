@@ -19,5 +19,5 @@ def count_letters(phrase):
 # While in this very simple example there is no noticeable difference,
 # it will be useful to keep in mind when iterating and creating much larger and more complex elements.
 
-print(count_letters("Hola mundo"))
-print(count_letters("Hello world"))
+# print(count_letters("Hola mundo"))
+# print(count_letters("Hello world"))
