@@ -241,6 +241,25 @@ Output: None
 
 | Filename | Description/Task |
 | --- | --- |
+| <pre>[10-set_intersection.py](10-set_intersection.py)</pre><!--@schambig--> | In this challenge, you must implement the logic for the `find_set_intersection` function, which finds the intersection of sets in a list of sets.<br> You will receive a single parameter: a list of sets.<br> The function should find the intersection of all the sets in the list and return the result as a new set.<br> If the list is empty or if there is no intersection between the sets, the function should return an empty set |
+```
+Input: find_set_intersection([
+  {1, 2, 3, 4},
+  {2, 3, 4, 5},
+  {3, 4, 5, 6}
+])
+Output: {3, 4}
+
+Input: find_set_intersection([
+  {1, 2, 3, 4},
+  {2, 4, 6, 8},
+  {3, 6, 9, 12}
+])
+Output: set()
+```
+
+| Filename | Description/Task |
+| --- | --- |
 | <pre>[]()</pre><!--@schambig--> |  |
 ```
 ```
