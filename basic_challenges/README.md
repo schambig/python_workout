@@ -23,7 +23,7 @@ This table contains a brief description of the working files of the project, cli
 
 | Filename | Description/Task |
 | --- | --- |
-| <pre>[0-zen.py](0-zen.py)</pre><!--@schambig--> | The Zen of Python consists of nineteen aphorisms, some of which favor one specific trait over another, providing opinions about what makes your code better, you should print it to the standard output usgin just only 11 characters |
+| <pre>[0-zen.py](0-zen.py)</pre><!--@schambig--> | `The Zen of Python` consists of nineteen aphorisms, some of which favor one specific trait over another, providing opinions about what makes your code better, you should print it to the standard output usgin just only 11 characters |
 ```
 Input: python3 0-zen.py
 
