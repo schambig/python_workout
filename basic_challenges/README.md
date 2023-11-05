@@ -200,6 +200,17 @@ Output: {
 
 | Filename | Description/Task |
 | --- | --- |
+| <pre>[9-largest_palindrome.py](9-largest_palindrome.py)</pre><!--@schambig--> | In this challenge, you need to create a function that finds the longest palindrome in a list of words.<br> You will receive a single parameter: a list of words.<br> • If there are no palindromes in the list, the function should return None.<br> • If there are multiple palindromes with the same maximum length, you should return the first palindrome found in the list.<br> • A palindrome is a word that can be read the same way forwards and backward. |
+```
+Input: find_largest_palindrome(["racecar", "level", "world", "hello"])
+Output: "racecar"
+
+Input: find_largest_palindrome(["Hibou", "Python", "xml", "owl"])
+Output: None
+```
+
+| Filename | Description/Task |
+| --- | --- |
 | <pre>[]()</pre><!--@schambig--> |  |
 ```
 ```
