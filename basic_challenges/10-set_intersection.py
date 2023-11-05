@@ -19,6 +19,7 @@ def find_set_intersection2(sets):
 def find_set_intersection3(sets):
     return sets[0].intersection(*sets[1:]) if sets else set()
 
+
 print(find_set_intersection([
   {1, 2, 3, 4},
   {2, 3, 4, 5},
