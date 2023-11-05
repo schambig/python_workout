@@ -23,6 +23,36 @@ This table contains a brief description of the working files of the project, cli
 
 | Filename | Description/Task |
 | --- | --- |
+| <pre>[0-zen.py](0-zen.py)</pre><!--@schambig--> | The Zen of Python consists of nineteen aphorisms, some of which favor one specific trait over another, providing opinions about what makes your code better, you should print it to the standard output usgin just only 11 characters |
+```
+Input: python3 0-zen.py
+
+Output:
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+```
+
+| Filename | Description/Task |
+| --- | --- |
 | <pre>[1-value_type.py](1-value_type.py)</pre><!--@schambig--> | In this challenge, you will find a function called `found_type` that takes a parameter called `value`. Your task is to determine the data type of the value parameter and return it from the `found_type` function.|
 ```
 Input:
