@@ -21,6 +21,6 @@ def find_largest_palindrome3(words):
   pals = [p for p in words if p == p[::-1]]
   return max(pals, key=len, default=None)
 
-  
+
 print(find_largest_palindrome(["racecar", "level", "world", "hello"]))
 print(find_largest_palindrome(["Hibou", "Python", "xml", "owl"]))
