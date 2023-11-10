@@ -30,14 +30,14 @@ def find_words_with_two_vowels4(words):
     return [w for w in words if len(re.findall(r"[AEIOUaeiou]", w)) == 2]
 
 
-print(find_words_with_two_vowels3([
+print(find_words_with_two_vowels([
   "hello",
   "Salo",
   "world",
   "Hibou"
 ]))
 
-print(find_words_with_two_vowels3([
+print(find_words_with_two_vowels([
     "text",
     "test",
     "python",
