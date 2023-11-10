@@ -135,4 +135,18 @@ both of which, in turn, inherit from class A.
 When you create an instance of class D and call the method,
 it raises the diamond problem because it's ambiguous which method should be invoked—
 the one from class B or class C.
+
+This ambiguity can lead to unexpected behavior and make the code harder to understand
+and maintain.
+To address the diamond problem, programming languages and developers employ various solutions,
+including:
+  - Method Resolution Order (MRO): Languages like Python have a defined order in which
+    they look for methods in the inheritance hierarchy.
+    Python uses the C3 linearization algorithm to determine the MRO.
+  - Virtual Inheritance: Some programming languages, like C++, provide a mechanism
+    called "virtual inheritance" to avoid creating multiple instances of a common base class
+    when multiple inheritance is involved.
+  - Composition over Inheritance: In some cases, it might be better to use composition
+    (combining objects) instead of inheritance to avoid the complexities associated
+    with the diamond problem.
 '''
