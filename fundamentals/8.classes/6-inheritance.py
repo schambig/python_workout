@@ -95,3 +95,44 @@ and challenges, such as the "diamond problem".
 Exercise caution and consider alternatives, such as composition,
 when designing your class hierarchy to maintain code readability and avoid potential issues.
 '''
+
+# ===============================================================================
+
+'''THE DIAMOND PROBLEM
+The "diamond problem" is a term used in the context of object-oriented programming
+to describe a particular issue that can arise with multiple inheritance.
+The problem occurs when a class inherits from two classes that have a common ancestor.
+This creates an ambiguity in the inheritance hierarchy, especially when methods or attributes
+from the common ancestor are overridden in both parent classes.
+
+Let's illustrate the diamond problem with a simple example:
+'''
+
+class A:
+    def method(self):
+        print("Method of class A")
+
+class B(A):
+    def method(self):
+        print("Method of class B")
+
+class C(A):
+    def method(self):
+        print("Method of class C")
+
+class D(B, C):
+    pass
+
+# Creating an instance of class D
+d_instance = D()
+
+# Calling the method
+d_instance.method()
+
+'''
+In this example, class D inherits from both class B and class C,
+both of which, in turn, inherit from class A.
+When you create an instance of class D and call the method,
+it raises the diamond problem because it's ambiguous which method should be invoked—
+the one from class B or class C.
+'''
