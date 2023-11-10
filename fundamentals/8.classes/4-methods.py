@@ -41,6 +41,18 @@ class MyClass:
 # Calling a class method
 MyClass.print_class_attribute()  # I am a class attribute
 
+# Another example of Class method
+class Circulo:
+
+    pi = 3.141592
+
+    @classmethod
+    def area(cls, radio):
+        return cls.pi * (radio ** 2)
+
+resultado = Circulo.area(14)
+print(resultado)  # 615.752032
+
 
 '''Here's a brief example that includes both instance and class methods:'''
 class Car:
