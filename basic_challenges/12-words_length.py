@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+# One liner
+def count_words_by_length(words):
+  return {len(w): sum(1 for i in words if len(i) == len(w)) for w in words}
+
 # Short version using list and dictionary comprehensions.
 def count_words_by_length(words):
   keys = [len(w) for w in words]
