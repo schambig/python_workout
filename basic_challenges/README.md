@@ -281,6 +281,28 @@ Output: []
 
 | Filename | Description/Task |
 | --- | --- |
+| <pre>[12-words_length.py](12-words_length.py)</pre><!--@schambig--> | In this challenge, you need to create a function called `count_words_by_length` that takes a list of words and returns a dictionary that maps the length of the words to the count of words having that length. |
+```
+Input: count_words_by_length([
+  "apple",
+  "banana",
+  "orange",
+  "grapefruit",
+  "pear",
+  "kiwi"
+])
+Output: {5: 1, 6: 2, 10: 1, 4: 2}
+
+Input: count_words_by_length([
+  "apple",
+  "banana",
+  "orange"
+])
+Output: {5: 1, 6: 2}
+```
+
+| Filename | Description/Task |
+| --- | --- |
 | <pre>[]()</pre><!--@schambig--> |  |
 ```
 ```
