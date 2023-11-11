@@ -262,7 +262,7 @@ Output: set()
 | --- | --- |
 | <pre>[11-two_vowels.py](11-two_vowels.py)</pre><!--@schambig--> | In this challenge, you must create the logic for the `find_words_with_two_vowels` function, which finds words that contain exactly two vowels in a list of words.<br> The vowels can be either uppercase or lowercase.<br> You will receive a single parameter: a list of words.<br> The function should return a new list that contains all the words from the original list that meet the condition mentioned above.<br> If there are no words that meet this condition, you should return an empty list. |
 ```
-Input: find_words_with_two_vowels3([
+Input: find_words_with_two_vowels([
   "hello",
   "Salo",
   "world",
@@ -270,7 +270,7 @@ Input: find_words_with_two_vowels3([
 ])
 Output: ['hello', 'Salo']
 
-Input: (find_words_with_two_vowels3([
+Input: (find_words_with_two_vowels([
     "text",
     "test",
     "python",
