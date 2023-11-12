@@ -1,20 +1,20 @@
 #!/usr/bin/python3
 
-# Using lambda funtion.
+# Using lambda function.
 def filter_user_messages(messages, user):
   return  list(filter(lambda x: x['sender'] == user, messages))
 
-# Using list comprehension
+# Using list comprehension.
 def filter_user_messages2(messages, user):
   return [m for m in messages if m['sender'] == user]
 
 # Using loop and conditional.
 def filter_user_messages3(messages, user):
-  lis = []
+  lista = []
   for m in messages:
     if m['sender'] == user:
-      lis.append(m)
-  return lis
+      lista.append(m)
+  return lista
 
 
 messages = [
