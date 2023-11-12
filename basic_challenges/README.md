@@ -300,6 +300,28 @@ Input: count_words_by_length([
 ])
 Output: {5: 1, 6: 2}
 ```
+| Filename | Description/Task |
+| --- | --- |
+| <pre>[13-filter_message.py](13-filter_message.py)</pre><!--@schambig--> | In this challenge, you will implement a function that filters messages for a specific user.<br> The `filter_user_messages` function will receive two parameters<br> • `messages`: a list of messages.<br> • `user`: a username.<br> It should return a new list containing only the messages from the specified user.<br> The messages list contains dictionaries with information about each message, including the `sender` and the message `content`.<br> In case no messages from the user are found, the function should return an empty list `[]`. |
+```
+Input:
+messages = [
+  {'sender': 'Alice', 'content': 'Hola, ¿cómo estás?'},
+  {'sender': 'Bob', 'content': '¡Bien, gracias!'},
+  {'sender': 'Alice', 'content': '¿Quieres tomar un café?'},
+  {'sender': 'Charlie', 'content': 'Hola a todos.'},
+  {'sender': 'Alice', 'content': 'Nos vemos luego.'}
+]
+user = 'Alice'
+print(filter_user_messages(messages, user))
+
+Output:
+[
+  {'sender': 'Alice', 'content': 'Hola, ¿cómo estás?'},
+  {'sender': 'Alice', 'content': '¿Quieres tomar un café?'},
+  {'sender': 'Alice', 'content': 'Nos vemos luego.'}
+]
+```
 
 | Filename | Description/Task |
 | --- | --- |
