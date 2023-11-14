@@ -325,6 +325,22 @@ Output:
 
 | Filename | Description/Task |
 | --- | --- |
+| <pre>[14-my_map.py](14-my_map.py)</pre><!--@schambig--> | In this challenge, you will need to implement a custom function that emulates the behavior of the map method using higher-order functions.<br> The function will take two parameters: a list and a function (func).<br> • The `list` will contain a set of elements (numbers, objects, strings, etc.)<br> • The function will be used to perform a specific action on each element of the list.<br> The goal is to return a new list with the results obtained from applying the function to each element, similar to how the map method would do it. |
+```
+Input: my_map([1, 2, 3, 4], lambda num: num * 2)
+Output: [2, 4, 6, 8]
+
+Input: my_map([
+{"name": "colas", "age": 3},
+{"name": "pequeña", "age": 4},
+{"name": "blanca", "age": 3},
+{"name": "manchas", "age": 2}],
+lambda pet: pet["name"])
+Output: ['colas', 'pequeña', 'blanca', 'manchas']
+```
+
+| Filename | Description/Task |
+| --- | --- |
 | <pre>[]()</pre><!--@schambig--> |  |
 ```
 ```
