@@ -341,6 +341,23 @@ Output: ['colas', 'pequeña', 'blanca', 'manchas']
 
 | Filename | Description/Task |
 | --- | --- |
+| <pre>[15-try_except.py](15-try_except.py)</pre><!--@schambig--> | In this challenge, you need to create a function called `calculate_average` that calculates the average of a list of numbers. However, the function should handle two special cases correctly:<br> • If the list is empty, the function should raise a ValueError exception with the message "The list is empty."<br> • If the list contains elements that are not numbers, the function should raise a TypeError exception with the message "The list contains non-numeric elements."<br> Your goal is to implement the `calculate_average` function in a way that properly handles these cases and returns the average of the numbers in the list. |
+```
+Input: calculate_average([1, 2, 3, 4, 5])
+Output: 3.0
+
+Input: calculate_average([10, 20, 30, 40, 50])
+Output: 30.0
+
+Input: calculate_average([])
+Output: ValueError: The list is empty.
+
+Input: calculate_average([1, 2, '3', 4, 5])
+Output: TypeError: The list contains non-numeric elements.
+```
+
+| Filename | Description/Task |
+| --- | --- |
 | <pre>[]()</pre><!--@schambig--> |  |
 ```
 ```
