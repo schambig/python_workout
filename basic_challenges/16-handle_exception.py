@@ -10,8 +10,25 @@ def calculate_discounted_price(price, discount):
     return price * (1 - discount)
   except:
     raise Exception('Ha ocurrido un error inesperado')
-  
 
-print(calculate_discounted_price(100, 0.2))
+# use another function to manage instance type:
+def calculate_discounted_price2(price, discount):
+  if not is_instance(price) or not is_instance(discount):
+    raise TypeError('El precio y el descuento deben ser números') 
+  if price < 0 or discount < 0:
+    raise ValueError('El precio y el descuento deben ser valores positivos')
+  try:
+    return price * (1 - discount)
+  except:
+    raise Exception('Ha ocurrido un error inesperado')
 
-print(calculate_discounted_price(-50, 0.2))
+
+def is_instance(element):
+  if isinstance(element, (int, float)):
+    return True
+  return False
+
+
+print(calculate_discounted_price2(100, 0.2))
+
+print(calculate_discounted_price2(-50, 0.2))
