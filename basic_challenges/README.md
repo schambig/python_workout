@@ -358,6 +358,17 @@ Output: TypeError: The list contains non-numeric elements.
 
 | Filename | Description/Task |
 | --- | --- |
+| <pre>[16-handle_exception.py](16-handle_exception.py)</pre><!--@schambig--> | In this challenge, you need to create a function called `calculate_discounted_price` that calculates the discounted price of a product.<br> The function will receive two parameters: `price and discount`.<br> Your goal is to implement the necessary logic to calculate the price with the applied discount.<br> However, there are some conditions and exception handling that you should take into account:<br> • If the price or discount is a negative value, you should raise a `ValueError` exception with the message "Price and discount must be positive values."<br> • If the price or discount is not a number, you should raise a `TypeError` exception with the message "Price and discount must be numbers."<br> • In the case of any other unforeseen exception, you should catch it and raise a generic `Exception` with the message "An unexpected error has occurred." followed by the original exception message for more details.<br> Your function should return the price with the applied discount.<br> If the calculation is successful, you should return the result.<br> If any exception occurs, you should propagate it so that it can be handled in the appropriate context. |
+```
+Input: calculate_discounted_price(100, 0.2)
+Output: 80.0
+
+Input: calculate_discounted_price(-50, 0.2)
+Output: ValueError: Price and discount must be positive values.
+```
+
+| Filename | Description/Task |
+| --- | --- |
 | <pre>[]()</pre><!--@schambig--> |  |
 ```
 ```
