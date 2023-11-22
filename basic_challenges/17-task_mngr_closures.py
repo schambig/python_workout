@@ -32,9 +32,16 @@ def createTaskPlanner():
         task['completed'] = task.get('completed', False)   # TAKE A LOOK AT THE END, get() function definition
         tasks.append(task)
 
+    # remove/delete dictionary based on 'id' or 'name' keys
+    def removeTask(value):
+      for item in tasks:
+        if item['id'] == value or item['name'] == value:
+          tasks.remove(item)    
+
     return {
-      'addTask': addTask,
-      'tasks': tasks,
+        'addTask': addTask,
+        'removeTask': removeTask,
+        'tasks': tasks,
     }
 
 # create a closure
@@ -62,6 +69,8 @@ planner['addTask']({
     'priority': 3,
     'tags': ['coding', 'napping']
 })
+
+planner['removeTask']('Buy milk')
 
 pprint(planner['tasks'])
 
