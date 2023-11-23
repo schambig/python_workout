@@ -36,12 +36,17 @@ def createTaskPlanner():
     def removeTask(value):
       for item in tasks:
         if item['id'] == value or item['name'] == value:
-          tasks.remove(item)    
+          tasks.remove(item)
+    
+    # get the list of tasks
+    def getTasks():
+        return tasks
 
     return {
         'addTask': addTask,
         'removeTask': removeTask,
-        'tasks': tasks,
+        'getTasks': getTasks,
+        'tasks': tasks,  # deprecated by `getTasks`
     }
 
 # create a closure
@@ -72,7 +77,9 @@ planner['addTask']({
 
 planner['removeTask']('Buy milk')
 
-pprint(planner['tasks'])
+pprint(planner['getTasks']())
+
+# pprint(planner['tasks'])  # deprecated by `getTasks`
 
 
 '''get() method:
