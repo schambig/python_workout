@@ -41,12 +41,18 @@ def createTaskPlanner():
     # get the list of tasks
     def getTasks():
         return tasks
+    
+    # get all pendings tasks
+    def getPendingTasks():
+        # return list(filter((lambda item: item['completed'] == False), tasks))  # same as below
+        return [item for item in tasks if not item['completed']]
 
     return {
         'addTask': addTask,
         'removeTask': removeTask,
-        'getTasks': getTasks,
         'tasks': tasks,  # deprecated by `getTasks`
+        'getTasks': getTasks,
+        'getPendingTasks': getPendingTasks,
     }
 
 # create a closure
@@ -75,12 +81,15 @@ planner['addTask']({
     'tags': ['coding', 'napping']
 })
 
-planner['removeTask']('Buy milk')
+# planner['removeTask']('Buy milk')
 
-pprint(planner['getTasks']())
+# pprint(planner['getTasks']())
 
 # pprint(planner['tasks'])  # deprecated by `getTasks`
 
+pprint(planner['getPendingTasks']())
+
+# pprint(planner['getTasks']())
 
 '''get() method:
 
