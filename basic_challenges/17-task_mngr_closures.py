@@ -52,6 +52,12 @@ def createTaskPlanner():
         # return list(filter((lambda item: item['completed'] == True), tasks))  # same as below
         return [item for item in tasks if item['completed']]
 
+    # receive 'id' or 'name' and mark the task as completed
+    def markTaskAsCompleted(value):
+        for item in tasks:
+            if item['id'] == value or item['name'] == value:
+                item['completed'] = True
+
     return {
         'addTask': addTask,
         'removeTask': removeTask,
@@ -59,6 +65,7 @@ def createTaskPlanner():
         'getTasks': getTasks,
         'getPendingTasks': getPendingTasks,
         'getCompletedTasks': getCompletedTasks,
+        'markTaskAsCompleted': markTaskAsCompleted,
     }
 
 # create a closure
@@ -95,9 +102,11 @@ planner['addTask']({
 
 # pprint(planner['getPendingTasks']())
 
-pprint(planner['getCompletedTasks']())
+# pprint(planner['getCompletedTasks']())
 
-# pprint(planner['getTasks']())
+planner['markTaskAsCompleted']('Test3')
+
+pprint(planner['getTasks']())
 
 '''get() method:
 
