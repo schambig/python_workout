@@ -58,6 +58,10 @@ def createTaskPlanner():
             if item['id'] == value or item['name'] == value:
                 item['completed'] = True
 
+    # get tasks sorted by its priority: 3: not very urgent, 2: urgent, 1: very urgent
+    def getSortedTasksByPriority():
+        return sorted(tasks, key=lambda item: item['priority'])
+
     return {
         'addTask': addTask,
         'removeTask': removeTask,
@@ -66,6 +70,7 @@ def createTaskPlanner():
         'getPendingTasks': getPendingTasks,
         'getCompletedTasks': getCompletedTasks,
         'markTaskAsCompleted': markTaskAsCompleted,
+        'getSortedTasksByPriority': getSortedTasksByPriority,
     }
 
 # create a closure
@@ -104,9 +109,11 @@ planner['addTask']({
 
 # pprint(planner['getCompletedTasks']())
 
-planner['markTaskAsCompleted']('Test3')
+# planner['markTaskAsCompleted']('Test3')
 
-pprint(planner['getTasks']())
+pprint(planner['getSortedTasksByPriority']())
+
+# pprint(planner['getTasks']())
 
 '''get() method:
 
