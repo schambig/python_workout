@@ -61,6 +61,10 @@ def createTaskPlanner():
     # get tasks sorted by its priority: 3: not very urgent, 2: urgent, 1: very urgent
     def getSortedTasksByPriority():
         return sorted(tasks, key=lambda item: item['priority'])
+    
+    # filter tasks by a given tag
+    def filterTasksByTag(tag):
+        return list(filter((lambda item: tag in item['tags']), tasks))
 
     return {
         'addTask': addTask,
@@ -71,6 +75,7 @@ def createTaskPlanner():
         'getCompletedTasks': getCompletedTasks,
         'markTaskAsCompleted': markTaskAsCompleted,
         'getSortedTasksByPriority': getSortedTasksByPriority,
+        'filterTasksByTag': filterTasksByTag,
     }
 
 # create a closure
@@ -111,7 +116,9 @@ planner['addTask']({
 
 # planner['markTaskAsCompleted']('Test3')
 
-pprint(planner['getSortedTasksByPriority']())
+# pprint(planner['getSortedTasksByPriority']())
+
+pprint(planner['filterTasksByTag']('napping'))
 
 # pprint(planner['getTasks']())
 
