@@ -66,6 +66,18 @@ def createTaskPlanner():
     def filterTasksByTag(tag):
         return list(filter((lambda item: tag in item['tags']), tasks))
 
+    # find a task by its 'id' and update its properties
+    def updateTask(taskId, updates):
+        for item in tasks:
+            if item['id'] == taskId:
+                item.update({
+                    'id': updates['id'],
+                    'name': updates['name'],
+                    'priority': updates['priority'],
+                    'tags': updates['tags'],
+                    'completed': updates['completed'],
+                })
+
     return {
         'addTask': addTask,
         'removeTask': removeTask,
@@ -76,6 +88,7 @@ def createTaskPlanner():
         'markTaskAsCompleted': markTaskAsCompleted,
         'getSortedTasksByPriority': getSortedTasksByPriority,
         'filterTasksByTag': filterTasksByTag,
+        'updateTask': updateTask,
     }
 
 # create a closure
@@ -118,9 +131,17 @@ planner['addTask']({
 
 # pprint(planner['getSortedTasksByPriority']())
 
-pprint(planner['filterTasksByTag']('napping'))
+# pprint(planner['filterTasksByTag']('napping'))
 
-# pprint(planner['getTasks']())
+pprint(planner['updateTask'](1, {
+    'id': 4,
+    'name': 'Test4',
+    'priority': 3,
+    'tags': ['changing', 'muting'],
+    'completed': True,
+}))
+
+pprint(planner['getTasks']())
 
 '''get() method:
 
