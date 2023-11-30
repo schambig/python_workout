@@ -68,15 +68,20 @@ def createTaskPlanner():
 
     # find a task by its 'id' and update its properties
     def updateTask(taskId, updates):
+        # for item in tasks:
+        #     if item['id'] == taskId:
+        #         item.update({
+        #             'id': updates['id'],
+        #             'name': updates['name'],
+        #             'priority': updates['priority'],
+        #             'tags': updates['tags'],
+        #             'completed': updates['completed'],
+        #         })
+
+        # update dictionary using input, same as above but summarized
         for item in tasks:
             if item['id'] == taskId:
-                item.update({
-                    'id': updates['id'],
-                    'name': updates['name'],
-                    'priority': updates['priority'],
-                    'tags': updates['tags'],
-                    'completed': updates['completed'],
-                })
+                item.update(updates)
 
     return {
         'addTask': addTask,
