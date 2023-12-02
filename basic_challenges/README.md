@@ -371,6 +371,62 @@ Output: ValueError: Price and discount must be positive values.
 | --- | --- |
 | <pre>[17-task_mngr_closures.py](17-task_mngr_closures.py)</pre><!--@schambig--> | In this challenge, you will implement the logic of a task planner in Python.<br> The goal is to build the closure function called `createTaskPlanner`, which will return a series of methods to manage tasks.<br> Below are the methods that need to be implemented:<br> • `addTask(task)`: receives a dictionary containing task information and adds it to the array of tasks. The dictionary must contain the following keys: `'id'`, `'name'`, `'priority'`, `'tags'`, and `'completed'`. The `'completed'` key will be automatically set to `False` when adding a task.<br> • `removeTask(value)`: receives the `'id'` or `'name'` of the task and removes it from the array of tasks.<br> • `getTasks()`: returns the array of tasks.<br> • `getPendingTasks()`: returns only the pending tasks.<br> • `getCompletedTasks()`: returns only the completed tasks.<br> • `markTaskAsCompleted(value)`: receives the `'id'` or `'name'` of the task and marks it as completed.<br> • `getSortedTasksByPriority()`: returns a copy of the tasks sorted by priority (3: not very urgent, 2: urgent, 1: very urgent), without modifying the original list of tasks.<br> • `filterTasksByTag(tag)`: filters tasks by a specific tag.<br> • `updateTask(taskId, updates)`: searches for the task corresponding to the specified `'id'` and updates its properties with those specified in the updates dictionary. |
 ```
+Input: 
+planner = createTaskPlanner()
+planner['addTask']({
+    'id': 1,
+    'name': 'Buy milk',
+    'priority': 1,
+    'tags': ['shopping', 'home']
+})
+
+planner['addTask']({
+    'id': 2,
+    'name': 'Do the chores',
+    'priority': 3,
+    'tags': ['personal']
+})
+
+planner['markTaskAsCompleted']('Do the chores')
+print(planner['getCompletedTasks']())
+
+Output:
+[{
+  'id': 2,
+  'name': 'Do the chores',
+  'completed': True,
+  'priority': 3,
+  'tags': ['personal']
+}]
+
+===============================================
+
+Input:
+planner = createTaskPlanner()
+planner['addTask']({
+    'id': 1,
+    'name': 'Buy milk',
+    'priority': 1,
+    'tags': ['shopping', 'home']
+})
+
+planner['addTask']({
+    'id': 2,
+    'name': 'Do the chores',
+    'priority': 3,
+    'tags': ['personal']
+})
+
+print(planner['filterTasksByTag']('shopping'))
+
+Output:
+[{
+    'id': 1,
+    'name': 'Buy milk',
+    'completed': False,
+    'priority': 1,
+    'tags': ['shopping', 'home']
+}]
 ```
 
 | Filename | Description/Task |
