@@ -431,6 +431,26 @@ Output:
 
 | Filename | Description/Task |
 | --- | --- |
+| <pre>[18-car_class.py](18-car_class.py)</pre><!--@schambig--> | In this challenge, you will need to create the logic for a car using classes.<br> You should implement the necessary logic in the `Car` class in such a way that it can serve as a basis for creating new cars that receive the following parameters:<br> • `brand`: Car brand<br> • `model`: Car model<br> • `year`: Car year<br> • `mileage`: Car mileage<br> • `state`: The default state of the car will be  `False`, indicating that the car is turned off.<br> Additionally, you should implement the following methods to make the vehicles created with the `Car` class functional:<br> • `turnOn()`: A method that will turn on the car.<br> • `turnOff()`: A method that will turn off the car.<br> • `drive(kilometers)`: With this method, we can increase the mileage according to the given kilometers, but only if the car is turned on. Otherwise, it should display the following error message: "The car is off."<br> Remember to handle errors as an Exception. |
+```
+Input:
+toyota = Car("Toyota", "Corolla", 2020, 0);
+toyota.turnOn();
+toyota.drive(100);
+toyota.mileage
+
+Output: 100
+===========================================
+Input:
+toyota = Car("Toyota", "Corolla", 2020, 0);
+toyota.turnOff()
+toyota.drive(100)
+
+Output: Exception: The vehicle is off
+```
+
+| Filename | Description/Task |
+| --- | --- |
 | <pre>[]()</pre><!--@schambig--> |  |
 ```
 ```
