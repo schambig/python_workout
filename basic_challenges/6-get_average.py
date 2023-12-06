@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+from pprint import pprint
+
 
 def get_student_average(students):
   averages = [
@@ -18,17 +20,18 @@ def get_student_average(students):
     'students': names_averages,
   }
 
-# print(get_student_average([
-#   {
-#     "name": "Pedro",
-#     "grades": [90, 87, 88, 90],
-#   },
-#   {
-#     "name": "Jose",
-#     "grades": [99, 71, 88, 96],
-#   },
-#   {
-#     "name": "Maria",
-#     "grades": [92, 81, 80, 96],
-#   },
-# ]))
+
+pprint(get_student_average([
+  {
+    "name": "Pedro",
+    "grades": [90, 87, 88, 90],
+  },
+  {
+    "name": "Jose",
+    "grades": [99, 71, 88, 96],
+  },
+  {
+    "name": "Maria",
+    "grades": [92, 81, 80, 96],
+  },
+]))
