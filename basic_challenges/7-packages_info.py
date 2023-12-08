@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 from pprint import pprint
 
+
+# long version
 def get_packages_info(packs):
    # using a generator expression inside sum() function, it is not called tuple comprenhension
    total = round(sum(tup[1] for tup in packs), 2)
@@ -11,8 +13,8 @@ def get_packages_info(packs):
       'destinations': dest,
    }
 
-# It is suposed to use uderscore to indicate to not use that variable
-# but it is not working here :(
+# short version
+# first tried with count() but didn't work, then used a generator expression and sum()
 def get_packages_info2(packs):
     total = round(sum(tup[1] for tup in packs), 2)
     # line below won't work becuase:
@@ -30,7 +32,7 @@ def get_packages_info2(packs):
     }
 
 
-pprint(get_packages_info([
+pprint(get_packages_info2([
   (1, 20, "Mexico"),
   (2, 15.5, "Colombia"),
   (3, 30, "Mexico"),
