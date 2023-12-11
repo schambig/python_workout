@@ -50,8 +50,8 @@ class Parrot(Bird, Mammal):
         print("Squawk")
         super().make_sound()  # call the method in its immediate parent
         # super(Bird, self).make_sound()  # Call make_sound from Bird
-        # super(Mammal, self).make_sound()  # Call make_sound from Mammal directly
-        Mammal.make_sound(self)  # Call make_sound from Mammal
+        # super(Mammal, self).make_sound()  # Call make_sound from Mammal
+        Mammal.make_sound(self)  # Call make_sound from Mammal directly
 
 # Creating an instance of the Parrot class
 parrot = Parrot(name="Polly")
