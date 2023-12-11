@@ -485,6 +485,30 @@ Adding service Course to the cart
 
 | Filename | Description/Task |
 | --- | --- |
+| <pre>[20-usr_encapsulation.py](20-usr_encapsulation.py)</pre><!--@schambig--> | In this challenge, you must implement the logic for the `User` class that represents a user in a social network and use encapsulation to protect their private data.<br> The class should have the following private variables:<br> • `name`<br> • `age`<br> • `friends` (a list of dictionaries representing Users)<br> • `messages ` (a list of strings)<br> Additionally, you should provide the following public methods:<br> • `addFriend(friend)`: adds a user to the current user's list of friends.<br> • `sendMessage(message, friend)`: adds a message to the current user's message list and to the specified friend.<br> • `showMessages()`: returns the list of messages for the current user.<br> You should also have defined `getters` and `setters` to access private data such as `name` and `age`, which can be modified using their respective setter methods. |
+```
+Input:
+usuario1 = User("Mike", 28)
+usuario2 = User("Louis", 45)
+usuario1.addFriend(usuario2)
+usuario1.sendMessage("Whatup fool", usuario2)
+
+usuario1.showMessages()
+
+Output:
+["Whatup fool"]
+=============================================
+Input:
+usuario3 = User("Mike", 28)
+usuario1.name = "Michael"
+print(usuario1.name)
+
+Output:
+Michael
+```
+
+| Filename | Description/Task |
+| --- | --- |
 | <pre>[]()</pre><!--@schambig--> |  |
 ```
 ```
