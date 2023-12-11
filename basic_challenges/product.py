@@ -1,4 +1,4 @@
-#!/usr.bin/python3
+#!/usr/bin/python3
 
 class Product:
     '''This Class is used by 19-shopping_cart.py module'''
