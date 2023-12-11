@@ -451,6 +451,40 @@ Output: Exception: The vehicle is off
 
 | Filename | Description/Task |
 | --- | --- |
+| <pre>[19-shopping_cart.py](19-shopping_cart.py)</pre><!--@schambig--> | In this challenge, you must create a shopping cart system.<br> Also you need to create a file named [`product.py`](https://github.com/schambig/python_workout/blob/main/basic_challenges/product.py), which will be the base and abstract class.<br> You should create the child classes `Article` and `Service` that will extend from Product.<br> The `Article` class should implement the `addToCart()` method in a way that returns the string "Adding x units of article x to the cart," where `x` is the name and quantity of the product. On the other hand, the `Service` class should implement the `addToCart()` method in a way that returns the string "Adding service x to the cart," where `x` is the name of the service.<br> In addition, you should create the `Cart` class, which will be the shopping cart and will have the following methods:<br> • `addProduct(product)`: This method will add a product to the end of the shopping list and should call the `addToCart()` method of each product or service.<br> • `deleteProduct(product)`: This method will receive a product and remove it from the list of products.<br> • `calculateTotal()`: This method will calculate the total of the added products and return it.<br> • `getProducts()`: This method will return the array of products contained in the cart. |
+```
+Input:
+book = Article("Libro", 100, 2);
+course = Service("Curso", 120, 1);
+
+cart = Cart();
+cart.addProduct(book);
+cart.addProduct(course);
+cart.calculateTotal();
+
+Output:
+Adding 2 units of the article Book to the cart
+Adding service Course to the cart
+320
+==================================================
+Input:
+book = Article("Libro", 100, 2);
+course = Service("Curso", 120, 1);
+
+cart = Cart();
+cart.addProduct(book);
+cart.addProduct(course);
+cart.deleteProduct(book);
+cart.calculateTotal();
+
+Output:
+Adding 2 units of the article Book to the cart
+Adding service Course to the cart
+120
+```
+
+| Filename | Description/Task |
+| --- | --- |
 | <pre>[]()</pre><!--@schambig--> |  |
 ```
 ```
