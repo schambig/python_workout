@@ -8,6 +8,26 @@ class User:
         self._age = age
         self._friends = []
         self._messages = []
+
+    
+    @property
+    def name(self):
+        return self._name
+    
+
+    @name.setter
+    def name(self, new_name):
+        self._name = new_name
+
+
+    @property
+    def age(self):
+        return self._age
+    
+
+    @age.setter
+    def age(self, new_age):
+        self._age = new_age
     
 
     def addFriend(self, friend):
@@ -34,16 +54,18 @@ class User:
 # print(usr._User__age)  # 30
 
 
-# usr1 = User('Mike', 28)
-# usr2 = User('Louis', 45)
-
-# usr1.addFriend(usr2)
-# print(usr1.getFriends())
-
-# usr1.sendMessage('Whatup fool', usr2)
-# print(usr1.showMessages())
-
-
 usr1 = User('Mike', 28)
-usr1.name = 'Michael'
-print(usr1.name)
+usr2 = User('Louis', 45)
+
+usr1.addFriend(usr2)
+print(usr1.getFriends())  # [('Louis', 45)]
+
+usr1.sendMessage('Whatup fool', usr2)
+print(usr1.showMessages())  # ['Whatup fool']
+
+
+usr3 = User('Mike', 28)
+usr3.name = 'Michael'
+print(usr3.name)  # Michael
+usr1.addFriend(usr3)
+print(usr1.getFriends())  # [('Louis', 45), ('Michael', 28)]
