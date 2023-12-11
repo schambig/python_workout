@@ -2,13 +2,48 @@
 
 class User:
     def __init__(self, name, age):
-        self.__name = name  # private variable, use __
-        self.__age = age  # private variable
-        self._friends = []  # protected variable, use _
-        self._messages = []  # protected variable
+        # self.__name = name
+        # self.__age = age
+        self._name = name
+        self._age = age
+        self._friends = []
+        self._messages = []
+    
+
+    def addFriend(self, friend):
+        self._friends.append(friend)
+
+    
+    def sendMessage(self, message, friend):
+        self._messages.append(message)
+        friend._messages.append(message)
+
+    
+    def showMessages(self):
+        return self._messages
+
+    
+    def getFriends(self):
+        return [(fren._name, fren._age) for fren in self._friends]
 
 
-# # Accessing the private variable using name mangling
-usr = User('Harvey', 30)
-print(usr._User__name)  # Harvey
-print(usr._User__age)  # 30
+# # Accessing the private variable using name mangling, use this when you are trying to access
+# # a private variable like variables at the beggining if the __init__ method
+# usr = User('Harvey', 30)
+# print(usr._User__name)  # Harvey
+# print(usr._User__age)  # 30
+
+
+# usr1 = User('Mike', 28)
+# usr2 = User('Louis', 45)
+
+# usr1.addFriend(usr2)
+# print(usr1.getFriends())
+
+# usr1.sendMessage('Whatup fool', usr2)
+# print(usr1.showMessages())
+
+
+usr1 = User('Mike', 28)
+usr1.name = 'Michael'
+print(usr1.name)
