@@ -33,7 +33,9 @@ class Mammal(Animal):
 
     # use super() to update the dictionary
     info = super().getInfo()
-    info['hasFur'] = self.hasFur
+    # info['hasFur'] = self.hasFur
+    # we can also use update() function instead of line above
+    info.update({'hasFur': self.hasFur})
     return info
   
 
@@ -54,7 +56,9 @@ class Dog(Mammal):
 
     # use super() to update the dictionary
     info = super().getInfo()
-    info['breed'] = self.breed
+    # info['breed'] = self.breed
+    # we can also use update() function instead of line above
+    info.update({'breed': self.breed})
     return info
 
 
