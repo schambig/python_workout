@@ -30,6 +30,26 @@ class Mammal(Animal):
       'specie': self.specie,
       'hasFur': self.hasFur,
     }
+  
+
+class Dog(Mammal):
+  def __init__(self, name, age, breed, specie='dog', hasFur=True):
+    super().__init__(name, age, specie, hasFur)
+    self.breed = breed
+
+
+  def getInfo(self):
+    return {
+      'name': self.name,
+      'age': self.age,
+      'specie': self.specie,
+      'hasFur': self.hasFur,
+      'breed': self.breed,
+    }
+
+
+  def bark(self):
+    return 'woof!'
 
 
 bird = Animal('pepe', 1, 'bird')
@@ -37,3 +57,7 @@ pprint(bird.getInfo())
 
 hippo = Mammal('bartolo', 3, 'hippo', False)
 pprint(hippo.getInfo())
+
+dog = Dog('colitas', 3, 'chusquita')
+pprint(dog.getInfo())
+pprint(dog.bark())
