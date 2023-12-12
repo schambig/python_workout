@@ -509,6 +509,41 @@ Michael
 
 | Filename | Description/Task |
 | --- | --- |
+| <pre>[21-animal_inheritance.py](21-animal_inheritance.py)</pre><!--@schambig--> | In this challenge, you need to create a class hierarchy using inheritance.<br> The base class will be `Animal` with properties:<br> • `name`, `age`, and `specie`<br> • As well as a method `getInfo` that returns an object with the animal's information.<br> Next, you should create a class `Mammal` that inherits from `Animal` and has an additional property `hasFur`.<br> It should also have a method `getInfo` that overrides the parent's method and includes information about `hasFur`.<br> Finally, create a class `Dog` that inherits from `Mammal` and has an additional property `breed`. Its `getInfo` method should override the parent's method and include information about `breed`.<br> Additionally, it should have a `bark` method that returns the string `"woof!"`. The properties `specie` and `hasFur` should be included as `"dog"` and `True`, respectively, in the implementation, so it should not be necessary to pass these values when creating an instance. |
+```
+Input:
+bird = Animal("pepe", 1, "bird")
+bird.getInfo()
+
+Output:
+{
+  "name": "pepe",
+  "age": 1,
+  "specie": "bird",
+}
+============================================
+Input:
+hippo = Mammal("bartolo", 3, "hippo", false)
+hippo.getInfo()
+
+Output:
+{
+  "name": "bartolo",
+  "age": 3,
+  "specie": "hippo",
+  "hasFur": false,
+}
+============================================
+Input:
+dog = Dog("colitas", 4, "chusquita");
+dog.bark()
+
+Output:
+"woof!"
+```
+
+| Filename | Description/Task |
+| --- | --- |
 | <pre>[]()</pre><!--@schambig--> |  |
 ```
 ```
