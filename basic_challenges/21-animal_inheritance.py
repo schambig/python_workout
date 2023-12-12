@@ -24,12 +24,17 @@ class Mammal(Animal):
 
 
   def getInfo(self):
-    return {
-      'name': self.name,
-      'age': self.age,
-      'specie': self.specie,
-      'hasFur': self.hasFur,
-    }
+    # return {
+    #   'name': self.name,
+    #   'age': self.age,
+    #   'specie': self.specie,
+    #   'hasFur': self.hasFur,
+    # }
+
+    # use super() to update the dictionary
+    info = super().getInfo()
+    info['hasFur'] = self.hasFur
+    return info
   
 
 class Dog(Mammal):
@@ -39,13 +44,18 @@ class Dog(Mammal):
 
 
   def getInfo(self):
-    return {
-      'name': self.name,
-      'age': self.age,
-      'specie': self.specie,
-      'hasFur': self.hasFur,
-      'breed': self.breed,
-    }
+    # return {
+    #   'name': self.name,
+    #   'age': self.age,
+    #   'specie': self.specie,
+    #   'hasFur': self.hasFur,
+    #   'breed': self.breed,
+    # }
+
+    # use super() to update the dictionary
+    info = super().getInfo()
+    info['breed'] = self.breed
+    return info
 
 
   def bark(self):
