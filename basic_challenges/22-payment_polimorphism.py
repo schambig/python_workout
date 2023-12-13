@@ -2,6 +2,7 @@
 from pprint import pprint
 from paypal import PayPal
 from card import Card
+from cash import Cash
 
 
 '''
@@ -19,3 +20,7 @@ pprint(process_pay(paypal, 404))
 
 card = Card('4444333322221111')
 pprint(process_pay(card, 500))
+
+
+cash = Cash()
+pprint(process_pay(cash, 202))
