@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 from pprint import pprint
 from paypal import PayPal
+from card import Card
 
 
 '''
-This module works in conjunction with `pay.py`, `paypal.py` modules
+This module works in conjunction with `pay.py`, `paypal.py`, `card.py` modules
 '''
 
 
@@ -14,3 +15,7 @@ def process_pay(payment_method, amount):
 
 paypal = PayPal('email@example.com')
 pprint(process_pay(paypal, 404))
+
+
+card = Card('4444333322221111')
+pprint(process_pay(card, 500))
