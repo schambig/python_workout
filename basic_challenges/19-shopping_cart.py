@@ -2,6 +2,9 @@
 from product import Product
 
 
+''' This module works in conjunction with `product.py` module '''
+
+
 class Article(Product):
     def addToCart(self):
         return f'Adding {self.quantity} units of the article {self.name} to the cart'
