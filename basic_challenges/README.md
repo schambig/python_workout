@@ -544,6 +544,13 @@ Output:
 
 | Filename | Description/Task |
 | --- | --- |
+| <pre>[22-payment_polimorphism.py](22-payment_polimorphism.py)</pre><!--@schambig--> | In this challenge, you will have to implement a payment system using polymorphism.<br> You should create a base class called `Pay` that contains a single method called `make_pay`.<br> This method will receive the payment amount and return an object with two properties:<br> • `realized: True`<br> • `quantity: $amountToPay`<br><br> Additionally, you will need to create the classes `PayPal`, `Card`, and `Cash`, where each one should inherit from the `Pay` class.<br><br> The `PayPal` class should receive an `email` in the constructor, and the `make_pay` method should add the properties:<br> • `platform: 'PayPal'`<br> • `email: $ReceivedEmail`<br><br> The `Card` class will receive a 16-digit card number.<br> When accessing the `make_pay` method, it will validate if the card has this length.<br> If the card does not have 16 digits, an `Exception` should be raised.<br> Otherwise, the method from `Pay` will have an additional property called `last_card_numbers`, where the last 4 digits of the card will be returned.<br><br> The `Cash` class will simply return the same as the base class.<br><br> Finally, you must implement the logic of the  `process_pay` function, which will receive a payment method and the amount. It will return the object by calling the `make_pay` method of each received entity.<br><br> Note that each class should have its own file.<br> • [pay.py](https://github.com/schambig/python_workout/blob/main/basic_challenges/pay.py)<br> • [paypal.py](https://github.com/schambig/python_workout/blob/main/basic_challenges/paypal.py)<br> • [card.py](https://github.com/schambig/python_workout/blob/main/basic_challenges/card.py)<br> • [cash.py](https://github.com/schambig/python_workout/blob/main/basic_challenges/cash.py) |
+```
+
+```
+
+| Filename | Description/Task |
+| --- | --- |
 | <pre>[]()</pre><!--@schambig--> |  |
 ```
 ```
