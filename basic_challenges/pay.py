@@ -9,4 +9,4 @@ class Pay:
         return {
             'realized': True,
             'quantity': quantity,  # use the parameter passed to the method, not self.quantity
-        }                          # bacause there's no such attribute defined in the Pay call
+        }                          # bacause there's no such attribute defined in the Pay class
