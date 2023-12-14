@@ -59,6 +59,15 @@ class MyDict:
         return dic
 
 
+    def join(self, character=','):
+        string = ''
+        for item in range(self.length):
+            string += self.data[item]
+            if item < (self.length - 1):
+                string += character
+        return string
+
+
 dic = MyDict()
 dic.append('S')
 dic.append('a')
@@ -92,3 +101,6 @@ def one_letter(item):
         return item
 res = dic.filter(one_letter)
 print(res.__dict__)  # {'data': {0: 'a', 1: 'l'}, 'length': 2}
+
+
+pprint(dic.join('=='))  # 'Test==a==l'
