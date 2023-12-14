@@ -582,6 +582,32 @@ Output:
 
 | Filename | Description/Task |
 | --- | --- |
+| <pre>[23-my_dictionary.py](23-my_dictionary.py)</pre><!--@schambig--> | In this callenge your goal is to create a class called `MyDict` that simulates the behavior of a native Python dictionary, without using the existing methods. You will implement the logic for the following methods:<br> • `map(func)`: Iterates over each element of our data structure, applying the function `func` to each one, and returns a new list (which will be an instance of `MyDict`).<br> • `filter(func)`: Iterates over each element of our data structure, filtering them according to the conditions specified by the function `func`, and returns a list with the filtered elements (also an instance of `MyDict`).<br> • `join(character)`: Concatenates all elements of our data structure into a string, separating them by the specified `character`. If no character is provided, the default separator will be a comma `,`.<br> • `append(item)`: Adds an element (`item`) to the end of the list and increases the `length`.<br> • `pop()`: Removes the last element from the list and returns it, also decreasing the `length`.<br> • `shift()`: Removes the first element from the list and returns it, decreasing the `length`.<br> • `unshift(item)`: Adds an element (`item`) to the beginning of the list and increases the `length`.<br> Additionally, you need to store the elements within the property named `data` and the number of elements within the property named `length` so that they can be accessed during testing. |
+```
+Input:
+myList = MyList()
+myList.append("a")
+myList.append("b")
+myList.append("c")
+
+print(myList.data)
+
+Output:
+{0: 'a', 1: 'b', 2: 'c'}
+========================
+Input:
+myList = MyList()
+myList.append('Hola')
+myList.unshift('k ase')
+
+print(myArray.data)
+
+Output:
+{0: 'Hola', 1: 'k ase'}
+```
+
+| Filename | Description/Task |
+| --- | --- |
 | <pre>[]()</pre><!--@schambig--> |  |
 ```
 ```
