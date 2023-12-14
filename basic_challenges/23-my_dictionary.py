@@ -44,6 +44,13 @@ class MyDict:
         self.length += 1
 
 
+    def map(self, func):
+        dic = MyDict()
+        for item in range(self.length):
+            dic.append(func(self.data[item]))
+        return dic
+
+
 dic = MyDict()
 dic.append('S')
 dic.append('a')
@@ -60,4 +67,9 @@ dic.shift()
 pprint(dic.data)  # {0: 'a', 1: 'l'}
 
 dic.unshift('Test')
-pprint(dic.data)  # {0: 'Chambi', 1: 'a', 2: 'l'}
+pprint(dic.data)  # {0: 'Test', 1: 'a', 2: 'l'}
+
+def caps(item):
+    return item.upper()
+r = dic.map(caps)
+print(r.__dict__)  # {'data': {0: 'TEST', 1: 'A', 2: 'L'}, 'length': 3}
