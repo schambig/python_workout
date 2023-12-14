@@ -62,7 +62,9 @@ class MyDict:
     def join(self, character=','):
         string = ''
         for item in range(self.length):
+            # Concatenate the string representation of each element
             string += self.data[item]
+            # Add the specified character if it's not the last element
             if item < (self.length - 1):
                 string += character
         return string
