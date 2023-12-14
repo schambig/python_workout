@@ -32,6 +32,13 @@ class MyDict:
         # Update the length of the list
         self.length -= 1
         return first_item
+    
+
+    def unshift(self, item):
+        for i in range(self.length, 0, -1):
+            self.data[i] = self.data[i - 1]
+        self.data[0] = item
+        self.length += 1
 
 
 dic = MyDict()
@@ -48,3 +55,6 @@ pprint(dic.length)  # 3
 
 dic.shift()
 pprint(dic.data)  # {0: 'a', 1: 'l'}
+
+dic.unshift('Test')
+pprint(dic.data)  # {0: 'Chambi', 1: 'a', 2: 'l'}
