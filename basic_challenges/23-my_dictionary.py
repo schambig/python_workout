@@ -29,15 +29,18 @@ class MyDict:
         # Delete the last element (which is now a duplicate of the second-to-last element)
         # "second-to-last element" refers to the element one position before the last element.
         del self.data[self.length -1]
-        # Update the length of the list
+        # Update the length of the dictionary
         self.length -= 1
         return first_item
     
 
     def unshift(self, item):
+        # Shift all elements to the right, starting from the end
         for i in range(self.length, 0, -1):
             self.data[i] = self.data[i - 1]
+        # Place the new item at the beginning of the list
         self.data[0] = item
+        # Increase the length of the the dictionary
         self.length += 1
 
 
