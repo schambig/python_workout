@@ -51,6 +51,14 @@ class MyDict:
         return dic
 
 
+    def filter(self, func):
+        dic = MyDict()
+        for item in range(self.length):
+            if func(self.data[item]):
+                dic.append(func(self.data[item]))
+        return dic
+
+
 dic = MyDict()
 dic.append('S')
 dic.append('a')
@@ -59,17 +67,28 @@ dic.append('o')
 pprint(dic.data)  # {0: 'S', 1: 'a', 2: 'l', 3: 'o'}
 pprint(dic.length)  # 4
 
+
 dic.pop()
 pprint(dic.data)  # {0: 'S', 1: 'a', 2: 'l'}
 pprint(dic.length)  # 3
 
+
 dic.shift()
 pprint(dic.data)  # {0: 'a', 1: 'l'}
 
+
 dic.unshift('Test')
 pprint(dic.data)  # {0: 'Test', 1: 'a', 2: 'l'}
+
 
 def caps(item):
     return item.upper()
 r = dic.map(caps)
 print(r.__dict__)  # {'data': {0: 'TEST', 1: 'A', 2: 'L'}, 'length': 3}
+
+
+def one_letter(item):
+    if len(item) == 1:
+        return item
+res = dic.filter(one_letter)
+print(res.__dict__)  # {'data': {0: 'a', 1: 'l'}, 'length': 2}
