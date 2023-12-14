@@ -21,10 +21,15 @@ class MyDict:
     
 
     def shift(self):
+        # Store the first item in a variable
         first_item = self.data[0]
+        # Shift all elements one position to the left
         for item in range(1, self.length):
             self.data[item - 1] = self.data[item]
+        # Delete the last element (which is now a duplicate of the second-to-last element)
+        # "second-to-last element" refers to the element one position before the last element.
         del self.data[self.length -1]
+        # Update the length of the list
         self.length -= 1
         return first_item
 
