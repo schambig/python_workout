@@ -14,7 +14,14 @@ class ContactList:
         # the range [0, size-1]
         return hash(key) % self.size
 
-
+    '''
+    The insert method takes a name and phone as parameters.
+    It calculates the index for the contact using the hash method.
+    It then appends a tuple (name, phone) to the sublist at the computed index in
+    the contacts_list.
+    This means that contacts with similar hash values will be stored in the same sublist,
+    providing a basic form of hash-based organization.
+    '''
     def insert(self, name, phone):
         index = self.hash(name)
         # print(index)
