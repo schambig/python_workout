@@ -28,6 +28,17 @@ class ContactList:
         self.contacts_list[index].append((name, phone))
 
 
+    def retrieve_all(self):
+        all_contacts = []
+        # Iterate through each sublist in contacts_list
+        for contact in self.contacts_list:
+            # Iterate through each tuple (key, value) in the sublist
+            for key, value in contact:
+                # Convert the tuple to a list and append to all_contacts
+                all_contacts.append(list((key, value)))
+        return all_contacts
+
+
 conts_list = ContactList(5)
 print(conts_list.size)
 print(conts_list.contacts_list)
@@ -37,4 +48,10 @@ print(conts_list.hash('Test'))
 
 
 conts_list.insert('Mrs Pequeña', '666-555-444')
-print(conts_list.contacts_list)
+print(conts_list.contacts_list)  # [[('Mrs Pequeña', '666-555-444')], [], [], [], []]
+
+
+conts_list.insert('Mrs Garfilito', '333-222-111')
+print(conts_list.retrieve_all()) 
+# Output:
+# [['Mrs Pequeña', '666-555-444'], ['Mrs Garfilito', '333-222-111']]
