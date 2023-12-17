@@ -41,11 +41,23 @@ class ContactList:
 
 
     def get(self, name):
+        # Calculate the index using the hash function
         index = self.hash(name)
         # Iterate through each tuple (key, value) in the sublist at the calculated index
         for key, value in self.contacts_list[index]:
             if key == name:
                 return value
+        return None
+
+
+    def delete(self, name):
+        # Calculate the index using the hash function
+        index = self.hash(name)
+        # Iterate through each tuple (key, _) in the sublist at the calculated index
+        for key, _ in self.contacts_list[index]:
+            if key == name:
+                # If a match is found, delete the entire sublist at the calculated index
+                del self.contacts_list[index]
         return None
 
 
@@ -69,3 +81,7 @@ print(conts_list.retrieve_all())
 
 print(conts_list.get('Mr Garfilito'))  # 333-222-111
 print(conts_list.get('Mr Nobody'))  # None
+
+
+conts_list.delete('Mr Garfilito')
+print(conts_list.retrieve_all())  # [['Mrs Pequeña', '666-555-444']]
