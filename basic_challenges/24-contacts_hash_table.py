@@ -23,6 +23,7 @@ class ContactList:
     providing a basic form of hash-based organization.
     '''
     def insert(self, name, phone):
+        # Calculate the index using the hash function
         index = self.hash(name)
         # print(index)
         self.contacts_list[index].append((name, phone))
@@ -39,6 +40,15 @@ class ContactList:
         return all_contacts
 
 
+    def get(self, name):
+        index = self.hash(name)
+        # Iterate through each tuple (key, value) in the sublist at the calculated index
+        for key, value in self.contacts_list[index]:
+            if key == name:
+                return value
+        return None
+
+
 conts_list = ContactList(5)
 print(conts_list.size)
 print(conts_list.contacts_list)
@@ -51,7 +61,11 @@ conts_list.insert('Mrs Pequeña', '666-555-444')
 print(conts_list.contacts_list)  # [[('Mrs Pequeña', '666-555-444')], [], [], [], []]
 
 
-conts_list.insert('Mrs Garfilito', '333-222-111')
+conts_list.insert('Mr Garfilito', '333-222-111')
 print(conts_list.retrieve_all()) 
 # Output:
-# [['Mrs Pequeña', '666-555-444'], ['Mrs Garfilito', '333-222-111']]
+# [['Mrs Pequeña', '666-555-444'], ['Mr Garfilito', '333-222-111']]
+
+
+print(conts_list.get('Mr Garfilito'))  # 333-222-111
+print(conts_list.get('Mr Nobody'))  # None
