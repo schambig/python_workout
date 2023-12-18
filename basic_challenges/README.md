@@ -608,6 +608,39 @@ Output:
 
 | Filename | Description/Task |
 | --- | --- |
+| <pre>[24-contacts_hash_table.py](24-contacts_hash_table.py)</pre><!--@schambig--> | In this challenge, you must build a contact list using a hash table.<br> Your goal is to implement the logic for the `ContactList` class to add contacts and perform the corresponding operations.<br> The hash table (`ContactList`) should have the following methods:<br> • `hash(key)`: This method will take a `key` (in this case the `name` of the contact) and compute its hash value using the built-in `hash` function.br> • `insert(name, phone)`: This method will receive the name and phone number of a contact and add the contact to the hash table.<br> • `get(name)`: This method will receive the name of a contact and return its phone number. If the contact does not exist, it will return `None`.<br> • `retrieve_all()`: This method will return a list with all the buckets used in the hash table.<br> • `delete(name)`: This method will receive the name of a contact and remove that contact from the hash table. If the name is not found, it should return `None`. |
+```
+Input:
+contactList = ContactList(5)
+contactList.insert("Mrs Pequeña", "666-555-444")
+
+contactList.retrieveAll()
+
+Output:
+[['Mrs Pequeña', '666-555-444']]
+================================================
+Input:
+contactList = ContactList(5)
+contactList.insert("Mrs Pequeña", "666-555-444")
+
+contactList.get("Mrs Pequeña")
+
+Output:
+666-555-444"
+================================================
+Input:
+contactList = ContactList(5)
+contactList.insert("Mrs Pequeña", "666-555-444")
+contactList.delete("Mrs Pequeña")
+
+contactList.get("Mrs Pequeña")
+
+Output:
+None
+```
+
+| Filename | Description/Task |
+| --- | --- |
 | <pre>[]()</pre><!--@schambig--> |  |
 ```
 ```
