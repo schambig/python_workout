@@ -641,6 +641,42 @@ None
 
 | Filename | Description/Task |
 | --- | --- |
+| <pre>[25-task_mngr_maps.py](25-task_mngr_maps.py)</pre><!--@schambig--> | In this challenge, you need to create a task organizer using Maps and Sets in Python. Instead of using closures, we will implement a class-based solution that contains two methods:<br> • The `add_task` method will handle adding tasks to the Map. It is important to convert all letters in the task to lowercase using `lower()` to check if the task already exists. If it exists, the new tags will be added to the corresponding Set. If the task does not exist, a new entry in the Map will be created with a Set of tags initialized with the provided tags.<br> • The `print_tasks` method will return all created tasks with their tags. |
+```
+Input:
+my_task_manager = TaskManager()
+
+my_task_manager.add_task('Buy Milk', ['shopping', 'urgent'])
+my_task_manager.add_task('Walk the Dog', ['pets'])
+my_task_manager.add_task('Workout', ['health'])
+
+my_task_manager.print_tasks()
+
+Output:
+{'buy milk': {'shopping', 'urgent'},
+  'walk the dog': {'pets'},
+  'workout': {'health'}
+}
+============================================================
+Input:
+my_task_manager = TaskManager()
+
+my_task_manager.add_task('Buy Milk', ['shopping', 'urgent'])
+my_task_manager.add_task('Walk the Dog', ['pets'])
+my_task_manager.add_task('Buy Milk', ['dairy'])
+my_task_manager.add_task('Workout', ['health'])
+
+my_task_manager.print_tasks()
+
+Output:
+{'buy milk': {'dairy', 'shopping', 'urgent'},
+  'walk the dog': {'pets'},
+  'workout': {'health'}
+}
+```
+
+| Filename | Description/Task |
+| --- | --- |
 | <pre>[]()</pre><!--@schambig--> |  |
 ```
 ```
