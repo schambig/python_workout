@@ -20,6 +20,9 @@ class TaskManager:
             # If the task does not exist, create a new entry with the given tags
             self.tasks[task] = tags
 
+        # # All lines above could be replaced by this one, using the setdefault() function.
+        # self.tasks.setdefault(task.lower(), set()).update(tags)
+
 
 my_task_manager = TaskManager()
 print(my_task_manager.tasks)  # {}
