@@ -22,6 +22,10 @@ class TaskManager:
 
         # # All lines above could be replaced by this one, using the setdefault() function.
         # self.tasks.setdefault(task.lower(), set()).update(tags)
+    
+
+    def print_tasks(self):
+        return self.tasks        
 
 
 my_task_manager = TaskManager()
@@ -33,4 +37,14 @@ my_task_manager.add_task('Walk the Dog', ['pets'])
 my_task_manager.add_task('Workout', ['health'])
 print(my_task_manager.tasks)
 # Output
-# {'buy milk': {'shopping', 'urgent'}, 'walk the dog': {'pets'}, 'workout': {'health'}}
+# {'buy milk': {'shopping', 'urgent'},
+#   'walk the dog': {'pets'},
+#   'workout': {'health'}}
+
+my_task_manager.add_task('Buy Milk', ['dairy'])
+
+pprint(my_task_manager.print_tasks())
+# Output
+# {'buy milk': {'dairy', 'shopping', 'urgent'},
+#  'walk the dog': {'pets'},
+#  'workout': {'health'}}
