@@ -653,7 +653,8 @@ my_task_manager.add_task('Workout', ['health'])
 my_task_manager.print_tasks()
 
 Output:
-{'buy milk': {'shopping', 'urgent'},
+{
+  'buy milk': {'shopping', 'urgent'},
   'walk the dog': {'pets'},
   'workout': {'health'}
 }
@@ -669,7 +670,8 @@ my_task_manager.add_task('Workout', ['health'])
 my_task_manager.print_tasks()
 
 Output:
-{'buy milk': {'dairy', 'shopping', 'urgent'},
+{
+  'buy milk': {'dairy', 'shopping', 'urgent'},
   'walk the dog': {'pets'},
   'workout': {'health'}
 }
