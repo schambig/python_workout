@@ -679,6 +679,38 @@ Output:
 
 | Filename | Description/Task |
 | --- | --- |
+| <pre>[26-single_linked_list.py](26-single_linked_list.py)</pre><!--@schambig--> | In this challenge, we will implement a simple linked list to store information about patients in a hospital. Each node in the list will represent a patient and will have the following fields:<br> • Patient's name (string)<br> • Patient's age (number)<br> • Bed number assigned to the patient (number)<br><br> The linked list should have the following methods:<br> • `add_patient(name, age)`: Adds a new patient to the list, assigning them the next available bed. If there are no available beds, it should raise an error with the message "No beds available".<br> • `remove_patient(name)`: Removes the patient with the specified name from the list and frees up their bed. If the patient is not found in the list, it should raise an error with the message "Patient not found".<br> • `get_patient(name)`: Returns the information of the patient with the specified name in the following format `{name, age, bedNumber}`. If the patient is not found in the list, it should raise an error with the message "Patient not found".<br> • `getPatientList()`: Returns a list with the information of all patients in the list, where each patient has the following format `{name, age, bedNumber}`.<br> • `get_available_beds(): Returns a number indicating the total number of available beds.<br> Remember to use the syntax raise Exception("message") to raise errors. |
+```
+Input:
+lista = PatientList(3)
+lista.add_patient("Patient 1", 20)
+lista.add_patient("Patient 2", 30)
+
+list.get_patient_list()
+
+Output:
+[
+  { 'name': 'Patiente 1', 'age': 20, 'beb_number': 1 },
+  { 'name': 'Patiente 2', 'age': 30, 'beb_number': 2 },
+]
+
+list.get_patient("Patiente 1")
+
+Output:
+{ 'name': 'Patiente 1', 'age': 20, 'beb_number': 1 }
+
+list.remove_patient("Patiente 1")
+
+list.get_patient_list()
+
+Output:
+[
+  { 'name': 'Patiente 2', 'age': 30, 'beb_number': 2 },
+]
+```
+
+| Filename | Description/Task |
+| --- | --- |
 | <pre>[]()</pre><!--@schambig--> |  |
 ```
 ```
