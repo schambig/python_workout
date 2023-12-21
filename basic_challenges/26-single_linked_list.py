@@ -52,6 +52,10 @@ class PatientList:
     def get_patient_list(self):
         return [{'name': patient.name, 'age': patient.age, 'bed_number': patient.name} \
                 for patient in self.patients]
+    
+
+    def get_available_beds(self):
+        return self.available_beds
 
 
 lista = PatientList(3)
@@ -82,3 +86,6 @@ pprint(lista.get_patient_list())
 
 
 pprint(lista.get_patient('Patient1'))  # {'age': 20, 'bed_number': 1, 'name': 'Patient1'}
+
+
+pprint(lista.get_available_beds())  # {2, 3}
