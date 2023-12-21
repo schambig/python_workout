@@ -21,7 +21,20 @@ class PatientList:
         else:
             raise Exception('No beds available')
 
-        
+
+    def remove_patient(self, name):
+        found_patient = None
+        for patient in self.patients:
+            if patient.name == name:
+                found_patient = patient
+                break
+        if found_patient:
+            self.available_beds.add(found_patient.bed_number)
+            self.patients.remove(found_patient)
+        else:
+            raise Exception('Patient not found')
+
+
     def get_patient_list(self):
         return [{'name': patient.name, 'age': patient.age, 'bed_number': patient.name} \
                 for patient in self.patients]
@@ -46,3 +59,9 @@ pprint(lista.get_patient_list())
 # Output
 # [{'age': 20, 'bed_number': 'Patient1', 'name': 'Patient1'},
 #  {'age': 30, 'bed_number': 'Patient2', 'name': 'Patient2'}]
+
+
+lista.remove_patient('Patient2')
+pprint(lista.get_patient_list())
+# Output
+# [{'age': 20, 'bed_number': 'Patient1', 'name': 'Patient1'}]
