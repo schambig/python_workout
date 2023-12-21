@@ -21,6 +21,11 @@ class PatientList:
         else:
             raise Exception('No beds available')
 
+        
+    def get_patient_list(self):
+        return [{'name': patient.name, 'age': patient.age, 'bed_number': patient.name} \
+                for patient in self.patients]
+
 
 lista = PatientList(3)
 pprint(lista.max_beds)  # 3
@@ -34,3 +39,10 @@ pprint(lista.__dict__)
 # {'available_beds': {2, 3},
 #  'max_beds': 3,
 #  'patients': [<node.PatientNode object at 0x7ff23f0bebe0>]}
+
+
+lista.add_patient('Patient2', 30)
+pprint(lista.get_patient_list())
+# Output
+# [{'age': 20, 'bed_number': 'Patient1', 'name': 'Patient1'},
+#  {'age': 30, 'bed_number': 'Patient2', 'name': 'Patient2'}]
