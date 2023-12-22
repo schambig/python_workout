@@ -690,14 +690,14 @@ list.get_patient_list()
 
 Output:
 [
-  { 'name': 'Patiente 1', 'age': 20, 'beb_number': 1 },
-  { 'name': 'Patiente 2', 'age': 30, 'beb_number': 2 },
+  { 'name': 'Patiente 1', 'age': 20, 'bed_number': 1 },
+  { 'name': 'Patiente 2', 'age': 30, 'bed_number': 2 },
 ]
 
 list.get_patient("Patiente 1")
 
 Output:
-{ 'name': 'Patiente 1', 'age': 20, 'beb_number': 1 }
+{ 'name': 'Patiente 1', 'age': 20, 'bed_number': 1 }
 
 list.remove_patient("Patiente 1")
 
@@ -705,7 +705,7 @@ list.get_patient_list()
 
 Output:
 [
-  { 'name': 'Patiente 2', 'age': 30, 'beb_number': 2 },
+  { 'name': 'Patiente 2', 'age': 30, 'bed_number': 2 },
 ]
 ```
 
