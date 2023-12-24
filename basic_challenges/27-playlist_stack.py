@@ -21,3 +21,9 @@ class Playlist:
             new_song.next = self.top
             self.top = new_song
         self.length += 1
+
+
+playlist = Playlist()
+playlist.add_song('Sprinter')
+playlist.add_song('Yellow Ferrari')
+print(playlist.length)  # 2
