@@ -3,4 +3,4 @@
 class PlaylistNode:
     def __init__(self, value):
         self.value = value
-        self.length = 0
+        self.next = None
