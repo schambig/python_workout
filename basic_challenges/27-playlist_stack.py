@@ -23,7 +23,23 @@ class Playlist:
         self.length += 1
 
 
+    def play_song(self):
+        if self.top is None:
+            raise Exception('There is no song in the playlist.')
+        if self.top == self.buttom:
+            self.buttom = None
+        top_song = self.top
+        self.top = self.top.next
+        self.length -= 1
+        return top_song.value
+
+
 playlist = Playlist()
 playlist.add_song('Sprinter')
 playlist.add_song('Yellow Ferrari')
-print(playlist.length)  # 2
+playlist.add_song('Phospholipid')
+print(playlist.length)  # 3
+
+print(playlist.play_song())  # Phospholipid
+print(playlist.play_song())  # Yellow Ferrari
+print(playlist.length)  # 1
