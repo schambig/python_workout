@@ -32,6 +32,15 @@ class Playlist:
         self.top = self.top.next
         self.length -= 1
         return top_song.value
+    
+
+    def get_playlist(self):
+        current = self.top
+        playlist = []
+        while current is not None:
+            playlist.append(current.value)
+            current = current.next
+        return playlist
 
 
 playlist = Playlist()
@@ -43,3 +52,8 @@ print(playlist.length)  # 3
 print(playlist.play_song())  # Phospholipid
 print(playlist.play_song())  # Yellow Ferrari
 print(playlist.length)  # 1
+
+print(playlist.get_playlist())
+
+print(playlist.play_song())
+print(playlist.play_song())  # Exception: There is no song in the playlist.
