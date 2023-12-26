@@ -56,4 +56,5 @@ print(playlist.length)  # 1
 print(playlist.get_playlist())
 
 print(playlist.play_song())
+print(playlist.length)  # 0
 print(playlist.play_song())  # Exception: There is no song in the playlist.
