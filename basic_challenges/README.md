@@ -711,6 +711,35 @@ Output:
 
 | Filename | Description/Task |
 | --- | --- |
+| <pre>[27-playlist_stack.py](27-playlist_stack.py)</pre><!--@schambig--> | In this challenge, you are requested to implement a playlist using a stack in Python.<br> You should create the `Playlist` class with the following properties:<br> • `top`, `bottom`, and `length`, to represent the top, bottom, and length of the stack, respectively.<br> The `Playlist` class should have the following methods:<br> • `add_song(song)` : This method allows adding a song to the stack. The song is added to the top of the stack.<br> • `play_song()`: This method allows playing the song at the top of the stack and then removing it. If the stack is empty, an error should be raised with the message "There is no song in the playlist."<br> • `getPlaylist()`: This method transforms the stack into a list (array) containing all the songs in the order of playback, from the most recently added to the first. |
+```
+Input:
+playlist = Playlist()
+
+playlist.addSong("Sprinter")
+playlist.addSong("Yellow Ferrari")
+playlist.addSong("Phospholipid")
+
+Output:
+print(playlist.playSong())  # Phospholipid
+print(playlist.playSong())  # Yellow Ferrari
+print(playlist.playSong())  # Sprinter
+print(playlist.playSong())  # Exception: There is no song in the playlist.
+==========================================================================
+Input:
+
+playlist = Playlist()
+
+playlist.addSong("Sprinter")
+playlist.addSong("Yellow Ferrari")
+playlist.addSong("Phospholipid")
+
+print(playlist.getPlaylist()) 
+Output: ["Phospholipid", "Yellow Ferrari", "Sprinter"]
+```
+
+| Filename | Description/Task |
+| --- | --- |
 | <pre>[]()</pre><!--@schambig--> |  |
 ```
 ```
