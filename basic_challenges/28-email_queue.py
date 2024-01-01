@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 from mail import Mail
+from pprint import pprint
 
 
 ''' This module works in conjunction with `mail.py` module '''
@@ -46,4 +47,8 @@ email_queue.enqueue(
     'I can\'t access my account',
     'Signinig in issue'
 )
-print(email_queue.__dict__)
+pprint(email_queue.__dict__)
+# Output
+# {'first': <mail.Mail object at 0x7fcc2a0acc10>,
+#  'last': <mail.Mail object at 0x7fcc2a0acc10>,
+#  'length': 1}
