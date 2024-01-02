@@ -32,7 +32,13 @@ class Queue:
         removed_node = self.first
         self.first = self.first.next
         self.length -= 1
-        return removed_node.__dict__
+        # return removed_node.__dict__
+        return {
+            'from': removed_node.from_email,
+            'to': removed_node.to,
+            'body': removed_node.body,
+            'subject': removed_node.subject
+        }
 
 
     def peek(self):
@@ -52,7 +58,7 @@ email_queue.enqueue(
     'salo@example.me',
     'support@company.com',
     'I can\'t access my account',
-    'Signinig in issue'
+    'Signing in issue'
 )
 pprint(email_queue.__dict__)
 # Output
@@ -62,13 +68,19 @@ pprint(email_queue.__dict__)
 
 email = email_queue.dequeue()
 pprint(email)
-# Output
-# {'body': "I can't access my account",
-#  'from_email': 'salo@example.me',
-#  'next': None,
-#  'subject': 'Signinig in issue',
-#  'to': 'support@company.com'}
-email = email_queue.dequeue()
-pprint(email)
-# Output
-# IndexError: The queue is empty.
+# Output using line `return removed_node.__dict__`
+#   {'body': "I can't access my account",
+#    'from_email': 'salo@example.me',
+#    'next': None,
+#    'subject': 'Signing in issue',
+#    'to': 'support@company.com'}
+# Output using line `return {...}`
+#     {'body': "I can't access my account",
+#      'from': 'salo@example.me',
+#      'subject': 'Signinig in issue',
+#      'to': 'support@company.com'}
+
+# email = email_queue.dequeue()
+# pprint(email)
+# # Output
+# # IndexError: The queue is empty.
