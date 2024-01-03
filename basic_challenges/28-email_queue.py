@@ -42,7 +42,15 @@ class Queue:
 
 
     def peek(self):
-        pass
+        if self.length == 0:
+            raise IndexError('The queue is empty.')
+        else:
+            return {
+                'from': self.first.from_email,
+                'to': self.first.to,
+                'body': self.first.body,
+                'subject': self.first.subject
+            }        
 
 
     def is_empty(self):
@@ -59,6 +67,12 @@ email_queue.enqueue(
     'support@company.com',
     'I can\'t access my account',
     'Signing in issue'
+)
+email_queue.enqueue(
+    'luis@example.me',
+    'support@company.com',
+    'I found a bug in your system',
+    'Don\'t ignore this message!'
 )
 pprint(email_queue.__dict__)
 # Output
@@ -84,3 +98,10 @@ pprint(email)
 # pprint(email)
 # # Output
 # # IndexError: The queue is empty.
+
+pprint(email_queue.peek())
+# Output
+# {'body': 'I found a bug in your system',
+#  'from': 'luis@example.me',
+#  'subject': "Don't ignore this message!",
+#  'to': 'support@company.com'}
