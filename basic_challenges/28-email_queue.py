@@ -54,11 +54,11 @@ class Queue:
 
 
     def is_empty(self):
-        pass
+        return self.length == 0
 
 
     def size(self):
-        pass
+        return self.length
 
 
 email_queue = Queue()
@@ -105,3 +105,7 @@ pprint(email_queue.peek())
 #  'from': 'luis@example.me',
 #  'subject': "Don't ignore this message!",
 #  'to': 'support@company.com'}
+
+pprint(email_queue.is_empty())  # Output: False
+
+pprint(email_queue.length)  # Output: 1
