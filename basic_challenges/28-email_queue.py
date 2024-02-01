@@ -25,7 +25,14 @@ class Queue:
 
 
     def dequeue(self):
-        pass
+        if self.length == 0:
+            raise IndexError('The queue is empty.')
+        if self.first == self.last:
+            self.last = None
+        removed_node = self.first
+        self.first = self.first.next
+        self.length -= 1
+        return removed_node.__dict__
 
 
     def peek(self):
@@ -52,3 +59,16 @@ pprint(email_queue.__dict__)
 # {'first': <mail.Mail object at 0x7fcc2a0acc10>,
 #  'last': <mail.Mail object at 0x7fcc2a0acc10>,
 #  'length': 1}
+
+email = email_queue.dequeue()
+pprint(email)
+# Output
+# {'body': "I can't access my account",
+#  'from_email': 'salo@example.me',
+#  'next': None,
+#  'subject': 'Signinig in issue',
+#  'to': 'support@company.com'}
+email = email_queue.dequeue()
+pprint(email)
+# Output
+# IndexError: The queue is empty.
